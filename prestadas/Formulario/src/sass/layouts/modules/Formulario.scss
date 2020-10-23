@@ -1,0 +1,41 @@
+// .divAlignCenter{
+//     text-align: center;
+// }
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70%;
+    font-family: 'volaroid_scriptregular'; 
+    .bloqueInput{
+        display: flex;
+        flex-direction: row;
+        padding: 1em;
+    }
+    .contenedorInput{
+        padding: 5px{
+            right: $paddingInput;
+        }
+        display: flex;
+        flex-direction: column;
+
+        .parrafoInput{
+            display: flex;
+            p{
+            background-color: aquamarine;
+            margin:0;
+            padding: 1px;
+            }
+        }
+        input{
+            background-color: white;
+            padding: $paddingInput{
+                right: $paddingInput*10;}
+            border:none;
+            background-image:none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+        }
+    }
+}

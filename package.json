@@ -1,0 +1,14 @@
+{
+  "name": "pernu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pagPrincPug": "pug -P -w Propias/paginaPrincipal/src/pug -o propias/paginaPrincipal/public/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pug-cli2": "^1.0.0-alpha6.1"
+  }
+}

@@ -1,0 +1,21 @@
+.barraSiguiente{
+    background: $brown;
+    display: flex;
+    height: 30%;
+    align-items: center;
+    
+}
+
+
+.boton{
+    background: $peel;
+    padding: 25px 2em;
+    margin-left: 20px;
+        &#siguiente{
+            margin:{
+            left: auto;
+            right: 15px;
+            }
+            padding: 25px 5em;
+        }
+}

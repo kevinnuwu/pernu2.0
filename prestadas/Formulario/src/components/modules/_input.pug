@@ -1,0 +1,10 @@
+mixin bloqueInput(texto, texto2, tipo1, tipo2, id1, id2, placeholder1, placeholder2)
+    .bloqueInput
+        .contenedorInput
+            .parrafoInput
+                p= texto
+            input(type=`${tipo1}`, id= `${id1}` ,  placeholder= `${placeholder1}`, name="")
+        .contenedorInput
+            .parrafoInput
+                p= texto2
+            input(type=`${tipo2}`, id= `${id2}` ,  placeholder= `${placeholder2}`, name="")
