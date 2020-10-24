@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pagPrincPug": "pug -P -w Propias/paginaPrincipal/src/pug -o propias/paginaPrincipal/public/"
+    "pagPrincPug": "pug -P -w propias/paginaPrincipal/src/pug -o propias/paginaPrincipal/public/",
+    "pagPrincSass": "sass -w  propias/paginaPrincipal/src/sass/:propias/paginaPrincipal/public/css/"
   },
   "author": "",
   "license": "ISC",
