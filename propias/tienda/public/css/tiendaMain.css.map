@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,CAAC;EACG,eAAe,EAAE,IAAI;EACrB,KAAK,EAAE,OAAO;;AAGlB,EAAE;EACE,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,QAAQ;EACzB,UAAU,ECNL,SAAS;EDOd,MAAM,EAAE,GAAG;EACX,WAAW,EAAE,MAAM;EACnB,MAAM,EAAE,IAAI;;AAGhB,EAAE;EACE,KAAK,ECdD,OAAO;EDeX,MAAM,EAAE,MAAM;EACd,eAAe,EAAE,IAAI;EAEjB,WAAM,EAAE,wBAAwB;;AAIxC,MAAM;EACF,KAAK,EAAE,IAAI;EACX,YAAY,EAAE,IAAI;EAClB,WAAW,EAAE,KAAK",
+"sources": ["../../src/layouts/sass/modules/_nav.scss","../../src/layouts/sass/config/_paletaColores.scss"],
+"names": [],
+"file": "tiendaMain.css"
+}

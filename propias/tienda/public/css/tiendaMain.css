@@ -1,0 +1,24 @@
+a {
+  text-decoration: none;
+  color: inherit; }
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  background: #ffecb4ff;
+  margin: 0 0;
+  align-items: center;
+  height: 10vh; }
+
+li {
+  color: #18181c;
+  margin: 0 25px;
+  list-style-type: none;
+  font-family: 'volaroid_scriptregular'; }
+
+a, img {
+  width: 60px;
+  margin-right: auto;
+  margin-left: -15px; }
+
+/*# sourceMappingURL=tiendaMain.css.map */

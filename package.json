@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tiendaPug": "pug -P -w propias/tienda/pug -o propias/tienda/public/",
-    "tiendaSass": "sass -w  propias/tienda/sass/:propias/tienda/public/css/"
+    "tiendaPug": "pug -P -w propias/tienda/src/pug -o propias/tienda/public/",
+    "tiendaSass": "sass -w  propias/tienda/src/sass/:propias/tienda/public/css/"
   },
   "author": "",
   "license": "ISC",
