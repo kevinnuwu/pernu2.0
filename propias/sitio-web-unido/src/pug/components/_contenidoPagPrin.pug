@@ -1,0 +1,24 @@
+mixin bloqueProducto
+    .bloqueProducto
+        .panelImagenProducto
+        .panelTextoProducto
+mixin bloqueProductoHermano
+    .bloqueProducto
+        .panelTextoProducto       
+        .panelImagenProducto
+.contenedorBienvenida
+    .bloqueImagen
+        img(src="", alt="")
+    .bloqueTextoBienvenida
+        .titulo
+        .botonATienda
+.contenedorProductos
+    +bloqueProducto
+    +bloqueProductoHermano
+    +bloqueProducto
+.acerca
+    .tituloAcerca: p Acerca de
+    .bloqueDescripcion
+        .descripcionAcerca: p Descripción
+        .imagenDescripcion: p Aquí va una imagen
+include ../../layouts/pug/components/_footer

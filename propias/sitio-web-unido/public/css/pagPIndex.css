@@ -1,0 +1,129 @@
+body {
+  margin: 0; }
+
+.bloque {
+  display: flex;
+  background: #18181c;
+  height: 30vh;
+  align-items: center;
+  justify-content: center; }
+  .bloque .titulo {
+    margin-right: auto;
+    align-self: flex-start;
+    font-family: 'volaroid_scriptregular';
+    font-size: 40px;
+    font-width: 50%; }
+  .bloque .descripcionDelTitulo {
+    font-family: 'maxwell_boldregular';
+    font-size: 23px; }
+  .bloque .bloqueInvisible {
+    margin-left: auto; }
+  .bloque .titulo, .bloque .descripcionDelTitulo {
+    color: white;
+    flex: 1; }
+
+.bloque:nth-child(even) {
+  display: flex;
+  background: #75c8aeff;
+  height: 30vh;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row-reverse; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  background: #ffecb4ff;
+  margin: 0 0;
+  align-items: center;
+  height: 10vh; }
+
+li {
+  color: #18181c;
+  margin: 0 25px;
+  list-style-type: none;
+  font-family: 'volaroid_scriptregular'; }
+
+a, img {
+  width: 60px;
+  margin-right: auto;
+  margin-left: -15px; }
+
+.contenedorBienvenida {
+  display: flex;
+  height: 90vh; }
+  .contenedorBienvenida .bloqueImagen {
+    background-color: cornflowerblue;
+    width: 45%; }
+  .contenedorBienvenida .bloqueTextoBienvenida {
+    background-color: firebrick;
+    flex: 1;
+    width: 55%; }
+
+.contenedorProductos {
+  display: flex;
+  height: 100em;
+  flex-direction: column; }
+
+.bloqueProducto {
+  background-color: darkorange;
+  flex: 1;
+  display: flex; }
+  .bloqueProducto:nth-child(even) {
+    background-color: darkviolet; }
+
+.panelImagenProducto {
+  background-color: cadetblue;
+  width: 45%; }
+
+.panelTextoProducto {
+  background-color: crimson;
+  width: 55%; }
+
+.acerca {
+  background-color: indigo;
+  height: 120vh;
+  display: flex;
+  flex-direction: column; }
+  .acerca .tituloAcerca {
+    background-color: lightskyblue;
+    flex: 1; }
+  .acerca .bloqueDescripcion {
+    background-color: mediumvioletred;
+    flex: 3;
+    display: flex; }
+    .acerca .bloqueDescripcion .descripcionAcerca {
+      background-color: plum;
+      flex: 1; }
+    .acerca .bloqueDescripcion .imagenDescripcion {
+      background-color: burlywood;
+      flex: 1; }
+
+.footer {
+  display: flex;
+  height: 20em;
+  flex-direction: column; }
+
+.botonesFooter {
+  background-color: darksalmon;
+  flex: 3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .botonesFooter button {
+    padding: 0.8rem 3rem;
+    margin: 0 10px; }
+
+.textoRegisterComp {
+  background-color: goldenrod;
+  flex: 1;
+  display: flex; }
+  .textoRegisterComp p {
+    display: block;
+    margin: auto; }
+
+/*# sourceMappingURL=pagPIndex.css.map */
