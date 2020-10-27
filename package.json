@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "tiendaPug": "pug -P -w propias/tienda/src/pug -o propias/tienda/public/",
-    "tiendaSass": "sass -w  propias/tienda/src/sass/:propias/tienda/public/css/"
+    "tiendaSass": "sass -w  propias/tienda/src/sass/:propias/tienda/public/css/",
+    "pagPrincPug": "pug -P -w propias/paginaPrincipal/src/pug -o propias/paginaPrincipal/public/",
+    "pagPrincSass": "sass -w  propias/paginaPrincipal/src/sass/:propias/paginaPrincipal/public/css/"
   },
   "author": "",
   "license": "ISC",

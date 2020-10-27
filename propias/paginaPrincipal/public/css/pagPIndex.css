@@ -30,29 +30,6 @@ body {
   justify-content: center;
   flex-flow: row-reverse; }
 
-.footer {
-  display: flex;
-  height: 20em;
-  flex-direction: column; }
-
-.botonesFooter {
-  background-color: darksalmon;
-  flex: 3;
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
-  .botonesFooter button {
-    padding: 0.8rem 3rem;
-    margin: 0 10px; }
-
-.textoRegisterComp {
-  background-color: goldenrod;
-  flex: 1;
-  display: flex; }
-  .textoRegisterComp p {
-    display: block;
-    margin: auto; }
-
 a {
   text-decoration: none;
   color: inherit; }
@@ -125,5 +102,28 @@ a, img {
     .acerca .bloqueDescripcion .imagenDescripcion {
       background-color: burlywood;
       flex: 1; }
+
+.footer {
+  display: flex;
+  height: 20em;
+  flex-direction: column; }
+
+.botonesFooter {
+  background-color: darksalmon;
+  flex: 3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .botonesFooter button {
+    padding: 0.8rem 3rem;
+    margin: 0 10px; }
+
+.textoRegisterComp {
+  background-color: goldenrod;
+  flex: 1;
+  display: flex; }
+  .textoRegisterComp p {
+    display: block;
+    margin: auto; }
 
 /*# sourceMappingURL=pagPIndex.css.map */
