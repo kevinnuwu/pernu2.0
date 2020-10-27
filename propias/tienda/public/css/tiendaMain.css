@@ -1,3 +1,35 @@
+body {
+  margin: 0; }
+
+.bloque {
+  display: flex;
+  background: #18181c;
+  height: 30vh;
+  align-items: center;
+  justify-content: center; }
+  .bloque .titulo {
+    margin-right: auto;
+    align-self: flex-start;
+    font-family: 'volaroid_scriptregular';
+    font-size: 40px;
+    font-width: 50%; }
+  .bloque .descripcionDelTitulo {
+    font-family: 'maxwell_boldregular';
+    font-size: 23px; }
+  .bloque .bloqueInvisible {
+    margin-left: auto; }
+  .bloque .titulo, .bloque .descripcionDelTitulo {
+    color: white;
+    flex: 1; }
+
+.bloque:nth-child(even) {
+  display: flex;
+  background: #75c8aeff;
+  height: 30vh;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row-reverse; }
+
 a {
   text-decoration: none;
   color: inherit; }
@@ -20,5 +52,30 @@ a, img {
   width: 60px;
   margin-right: auto;
   margin-left: -15px; }
+
+.contenedorEncabezado {
+  height: 90vh; }
+
+.backgroundImagen {
+  background-color: black;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column; }
+
+.textoBienvenida {
+  padding: 1em;
+  background-color: darkturquoise;
+  padding: 2em;
+  width: 30em;
+  margin-left: 3em; }
+
+.descripcionBienvenida {
+  background-color: deeppink;
+  padding: 6em 2em;
+  width: 30em;
+  margin-left: 3em;
+  margin-top: 3em; }
 
 /*# sourceMappingURL=tiendaMain.css.map */
