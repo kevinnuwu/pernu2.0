@@ -1,0 +1,87 @@
+//Aquí se ponen los colores de los circulos de los paneles de los productos. Al final se encuentra el algoritmo que produce los colores
+//id único= <<#circuloColores`{numero}`>>
+$circulosColores: ("#circuloColores1": crimson, "#circuloColores2": blue, "#circuloColores3": 	mediumspringgreen, "#circuloColores4":chocolate  );
+
+
+
+
+.contenedorPaneles{
+    background-color: indigo;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:  space-around;
+    overflow: auto ;
+    &::-webkit-scrollbar {
+     display: none;
+}
+}
+
+.bloquePanel{
+    background-color: lightgreen;
+    height: 40%;
+    width: 20%;
+    margin: 2em 0.5em;
+}
+
+.fotoPanel{
+    background-color: burlywood;
+    height: 70%;
+    display: flex;
+    justify-content: flex-end;
+
+    .botonAnadirPanel{
+        background-color: black;
+        height: 30%;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .textoBotonAnadirPanel{
+            color: white;
+        }
+    }
+}
+
+.caracteristicasPanel{
+    background-color: cadetblue;
+    height: 31%;
+    display: flex;
+    
+    
+    .tallasPanel{
+        width: 36%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font: {
+                size: 1.5em;
+            }
+            word-wrap: break-word;
+            color: white;
+        }
+        .coloresPanel{
+        background-color: black;
+        display: flex;
+        width: 65%;
+        height: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+            .circulosColoresPanel{
+                    border-radius: 24px;
+                    height: 1em;
+                    width: 1em;
+                    margin-left: 1em;
+                }
+            }
+}
+
+@each $id, $color in $circulosColores {
+    .circulosColoresPanel#{$id} {
+        background-color: $color;    
+    }
+  } 

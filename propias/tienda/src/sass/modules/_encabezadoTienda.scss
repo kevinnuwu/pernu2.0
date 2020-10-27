@@ -4,18 +4,17 @@
 }
 
 .backgroundImagen{
-//     background: url("https://www.purina-latam.com/sites/g/files/auxxlc391/files/styles/kraken_generic_max_width_960/public/Purina%C2%AE%20La%20llegada%20del%20gatito%20a%20casa.jpg?itok=-tX3EMqT");
-//   /* The image used */
-//   background-image: url("img_girl.jpg");
+    background: black url("https://c4.wallpaperflare.com/wallpaper/573/746/509/tf2-engineer-pyro-team-fortes2-wallpaper-preview.jpg");
+  /* The image used */
 
-//   /* Full height */
-//   height: 100%; 
+  /* Full height */
+  height: 100%; 
 
-//   /* Center and scale the image nicely */
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-background-color: black;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+// background-color: black;
 height:100%;
 display: flex;
 justify-content: center;
@@ -26,16 +25,23 @@ flex-direction: column;
 .textoBienvenida{
     padding: 1em;
     background-color: darkturquoise;
-    padding: 2em;
     width: 30em;        
     margin-left: 3em;
+    font: {
+        size: 2em;
+    }
+    color: white
 }
 .descripcionBienvenida{
     background-color: deeppink;
-    padding: 6em 2em;
     width: 30em;        
-    margin:{
-    left: 3em;
-    top: 3em;
-}
+    margin: {
+        left: 3em;
+        top: 3em;
+    }
+    font: {
+        size: 2em;
+    }
+    color: white
+
 }
