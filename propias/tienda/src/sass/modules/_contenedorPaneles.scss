@@ -12,6 +12,7 @@ $circulosColores: ("#circuloColores1": crimson, "#circuloColores2": blue, "#circ
     flex-wrap: wrap;
     justify-content:  space-around;
     overflow: auto ;
+//esto hace la magia del scroll en los paneles loko
     &::-webkit-scrollbar {
      display: none;
 }
