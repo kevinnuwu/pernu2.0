@@ -1,0 +1,9 @@
+mixin navLiList(href, texto)
+    li: a(href= `${href}`)= texto
+
+a(href="index.html")
+    img(src="images/logoPav.png", alt="alt")
+    block navLi
+        ul
+            +navLiList("inciarSesion.html", "Iniciar Sesión")
+            +navLiList("tienda.html", "Tienda")
