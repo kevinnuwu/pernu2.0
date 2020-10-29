@@ -8,6 +8,8 @@
     "tiendaSass": "sass -w  propias/tienda/src/sass/:propias/tienda/public/css/",
     "pagPrincPug": "pug -P -w propias/paginaPrincipal/src/pug -o propias/paginaPrincipal/public/",
     "pagPrincSass": "sass -w  propias/paginaPrincipal/src/sass/:propias/paginaPrincipal/public/css/",
+    "productoExpandidoPug": "pug -P -w propias/producto-expandido/src/pug -o propias/producto-expandido/public/",
+    "productoExpandidoSass": "sass -w  propias/producto-expandido/src/sass/:propias/producto-expandido/public/css/",
     "sitioWebUnidoPug": "pug -P -w propias/sitio-web-unido/src/pug -o propias/sitio-web-unido/public/",
     "sitioWebUnidoSass": "sass -w  propias/sitio-web-unido/src/sass/:propias/sitio-web-unido/public/css/"
   },

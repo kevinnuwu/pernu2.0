@@ -48,11 +48,6 @@ li {
   list-style-type: none;
   font-family: 'volaroid_scriptregular'; }
 
-a, img {
-  width: 60px;
-  margin-right: auto;
-  margin-left: -15px; }
-
 .contenedorBienvenida {
   display: flex;
   height: 90vh; }
