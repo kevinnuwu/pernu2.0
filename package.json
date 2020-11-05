@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "barraUsuarioNoAuthPug": "pug -P -w propias/barra-usuario-no-autenticado/src/pug -o propias/barra-usuario-no-autenticado/public/",
-    "barraUsuarioNoAuthSass": "sass -w  propias/barra-usuario-no-autenticado/src/sass/:propias/barra-usuario-no-autenticado/public/css/"
+    "barraUsuarioAuthPug": "pug -P -w propias/barra-usuario-autenticado/src/pug -o propias/barra-usuario-autenticado/public/",
+    "barraUsuarioAuthSass": "sass -w  propias/barra-usuario-autenticado/src/sass/:propias/barra-usuario-autenticado/public/css/"
   },
   "author": "",
   "license": "ISC",
