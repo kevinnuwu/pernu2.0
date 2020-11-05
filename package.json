@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "barraUsuarioAuthPug": "pug -P -w propias/barra-usuario-autenticado/src/pug -o propias/barra-usuario-autenticado/public/",
-    "barraUsuarioAuthSass": "sass -w  propias/barra-usuario-autenticado/src/sass/:propias/barra-usuario-autenticado/public/css/"
+    "barraUsuarioAuthSass": "sass -w  propias/barra-usuario-autenticado/src/sass/:propias/barra-usuario-autenticado/public/css/",
+    "barraListaProductosPug": "pug -P -w propias/barra-usuario-autenticado/src/barra-lista-productos/pug -o propias/barra-usuario-autenticado/public/",
+    "barraListaProductosSass": "sass -w  propias/barra-usuario-autenticado/src/barra-lista-productos/sass/:propias/barra-usuario-autenticado/public/css/"
   },
   "author": "",
   "license": "ISC",

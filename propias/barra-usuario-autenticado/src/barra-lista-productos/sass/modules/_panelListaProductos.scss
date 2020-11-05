@@ -1,0 +1,29 @@
+@import "../../../layouts/sass/config/mixins";
+
+.contenedorBarraProductos{
+    height: 100%;
+    width: 100%;
+    background-color: teal;
+    @include flexFlow(center, center, column)
+}
+
+.blocProductosLista{
+    @include flexItem(yellowgreen, 85%, 100%);
+    @include flexFlow(center, center, column) 
+}
+
+.panelProductosLista{
+    @include flexItem(white, 30%, 90%);
+    margin: 0.5em;
+}
+.barraIrSumario{
+    @include flexItem(olivedrab, 15%, 100%);
+    @include flexFlow(flex-end, flex-end);
+    padding: 1em;
+    box-sizing: border-box;
+
+    #botonIrSumario{
+        @include flexItem(brown, 70%, 50%);
+        color: white;
+    }
+}

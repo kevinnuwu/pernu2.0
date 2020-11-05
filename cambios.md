@@ -1,19 +1,13 @@
 # Cambios ✏️
     "No se van a declarar los archivos base ni las extensiones cuando sus carpetas dominantes son descriptivas"
 ## 1.0 (4/11/2020)
-### **General**
-* Se monta la base de los archivos
-
-## 2.0 (4/11/2020)
-### **General**
-
 ### **Archivos**
-* Src
-    * Layouts:
+* Se monta la base de los archivos para la barra de usuario autenticado
 
-    * Pug:
-        
-    * Sass:
-
+## 2.0 (5/11/2020)
+### **General**
+    Cambio de paradigma: ahora todas las páginas se trabajan desde una misma rama. Así es más fácil de aplicar cambios globales
+### **Archivos**
+Se crea la base de la barra de lista de productos
 
 

@@ -1,0 +1,23 @@
+.contenedorBarraIconos
+    block contenidoCabeceraAutenticacion
+        .bloqueIconosBarra
+            if ordenIconosBarra == "derecha"
+                .iconoUsuario
+                .iconoListado
+            else if ordenIconosBarra== "izquierda"
+                .iconoListado
+                .iconoUsuario
+            else
+                .iconoUsuario
+                .iconoListado     
+        block fotoGeneradaBlock
+            .bloqueFotoGenerada
+                .fotoGenerada  
+    block contenidoInformacionAutenticacion
+        .contenedorInformacionUsuario
+            .tituloHaciaUsuario
+            .descripcionHaciaUsuario
+            .bloqueBotonesBarraUsuario
+                block botonesBarraUsuario
+                    button.sesionBarraUsuario
+                    button.registrarseBarraUsuario
