@@ -6,15 +6,20 @@
     background-color: teal;
     @include flexFlow(center, center, column)
 }
-
+ 
 .blocProductosLista{
     @include flexItem(yellowgreen, 85%, 100%);
-    @include flexFlow(center, center, column) 
-}
+    @include flexFlow(center, center);
+    flex-wrap: wrap;
+    overflow: auto ;
+    &::-webkit-scrollbar {
+        display: none;
+   } 
+} 
 
 .panelProductosLista{
     @include flexItem(white, 30%, 90%);
-    margin: 0.5em;
+    margin: 0.5em;  
 }
 .barraIrSumario{
     @include flexItem(olivedrab, 15%, 100%);

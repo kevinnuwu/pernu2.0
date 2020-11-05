@@ -1,0 +1,173 @@
+@mixin flexItem ($height: 100%, $width: 40% ,$backgroundColor: white){
+    height:$height;
+    width: $width;
+    background: $backgroundColor;
+}
+
+@mixin flexFlow ($justify: flex-start, $align: flex-start, $direction: row,$display: flex){
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    display: $display;
+
+}
+
+@mixin backgroundImage($path: black){
+    background: url($path);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+$IdItemColores: "#itemColores";
+$idItemTalla: "#itemTalla";
+
+$itemColores: ("#{$IdItemColores}1": crimson, "#{$IdItemColores}2": blue, "#{$IdItemColores}3": 	mediumspringgreen, "#{$IdItemColores}4":chocolate, "#{$IdItemColores}5":khaki, "#{$IdItemColores}6": white, "#{$IdItemColores}7": violet, "#{$IdItemColores}8": gold, "#{$IdItemColores}9": purple);
+
+$itemTallas: ("#{$idItemTalla}1", "#{$idItemTalla}2", "#{$idItemTalla}3", "#{$idItemTalla}4", "#{$idItemTalla}5", "#{$idItemTalla}6", "#{$idItemTalla}7", "#{$idItemTalla}8");
+
+
+@each $id, $color in $itemColores {
+    #{$id} {
+        background-color: $color;
+        border-radius: 24px;
+        height: 0.5em;
+        width: 0.5em;
+        margin-left: 0.7em;    
+        margin-bottom: 0.3em;    
+    }
+} 
+
+@each $id in $itemTallas {
+    #{$id} {
+        background-color: white;
+        height: 1.5em;
+        width: 1.5em;
+        @include flexFlow(center,center);
+        margin: 0 0.3em;  
+    }
+} 
+
+
+button{
+    cursor: pointer;
+}
+
+.contenedorProductoEx{
+    background-color: aquamarine;
+    width: 100%;
+    height:100%;
+    display: flex;
+
+}
+
+.fotoProductoEx{
+ @include flexItem(100%, 50%, blue);
+ @include backgroundImage("https://pbs.twimg.com/profile_images/1108111327963344897/177ypvoH_400x400.png"
+ )
+}
+.detallesProductoEx{
+    @include flexItem(100%, 50%, red);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.textoDetallesPr{
+    @include flexItem(20%, 100%, white);
+    display: flex;
+    flex-direction: column;
+        .tituloDetalles{
+            @include flexItem(100%, 100%, white);
+            @include flexFlow(center, center)
+        }
+        .descripcionDetalles{
+            @include flexItem(50%, 100%, white);
+            @include flexFlow(center, center)
+        }
+}
+
+.caracteristicasDetallesPr{
+    @include flexItem (80%, 100%, rgb(224, 248, 11));
+    display: flex;
+    flex-direction: column;
+    
+        .bloqueDetallesTallas{
+            @include flexItem(70%, 100%, black);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            
+            .cuadradoItemTallas{
+                @include flexItem(100%, 60%, black);
+                flex-wrap: wrap;
+                padding: 1em;
+                display: flex;
+                box-sizing: border-box;
+                @include flexFlow(center, center);
+                
+                
+            }
+        }
+        
+        
+
+        .bloqueDetallesColores{
+            @include flexItem(30%, 100%, black);
+            @include flexFlow(flex-end, center);
+            .cuadradoItemColores{
+                @include flexItem(100%, 100%, black);
+                display: flex;
+                flex-wrap: wrap;
+                padding: {
+                    top:1em;
+                    bottom: 1em;
+                    right: 0.3em;
+                    left: 0.3em;
+                };
+                box-sizing: border-box;
+                align-items: center;
+                justify-content: flex-end;
+                
+            }
+        }
+    }
+.anadirDetallesPr{
+    @include flexItem (20%, 100%, white);
+    @include flexFlow(flex-end, flex-end);
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+// @mixin flexFlow ($justify: flex-start, $align: flex-start, $direction: row,$display: flex)
+.contenedorAnadirDetalles{
+    @include flexItem(50%, 50%);
+    @include flexFlow(center, center);
+
+        .bloqueBotonesCantidad{
+            @include flexItem(100%, 33%, white);
+            @include flexFlow(center, center, column);
+        }
+
+        #flechaArriba, #flechaAbajo{
+            @include flexItem(100%, 100%, none);
+            @include backgroundImage("https://pbs.twimg.com/profile_images/1108111327963344897/177ypvoH_400x400.png"
+            )
+        }
+        .bloqueCantidadAnadir{
+            @include flexItem(100%, 33%, white);
+            @include flexFlow(center, center);
+            border: 0.3em solid black; 
+            box-sizing: border-box;
+            
+        }
+        .iconoAnadir{
+            @include flexItem(100%, 34%, white url('https://pbs.twimg.com/profile_images/1108111327963344897/177ypvoH_400x400.png') );
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-left: 1em;
+            
+        }
+}

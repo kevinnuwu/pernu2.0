@@ -1,9 +1,11 @@
 mixin panelProducto
     .panelProductosLista
+        include _caracteristicasPanel
 
 
 .contenedorBarraProductos
     .blocProductosLista
+        +panelProducto
         +panelProducto
         +panelProducto
         +panelProducto
