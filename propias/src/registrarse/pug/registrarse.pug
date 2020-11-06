@@ -1,0 +1,25 @@
+extends ../../layouts/pug/_defaultTemplate
+block head
+    link(rel="stylesheet", href="css/registrarseMain.css")
+block contenidoNav
+    a(href="barraListaProducto.html")
+        img(src="https://www.mandysam.com/img/random.jpg", alt="alt")
+    a(href="barraUsuarioAutenticado.html") BarraUsuarioAuth
+block contentTemplate
+    mixin mixinCasillasInput
+        .casillaTituloInput titulo
+        input.casillaRecoleccionInput
+    .contenedorRegistrarse
+        .blocInputs
+            .blocInputsFila1
+                #tituloRegistrarse Registrarse
+            form.blocInputsFila2
+                .fichaInputs#fichaCorreoElectronico
+                    +mixinCasillasInput
+                .fichaInputs#fichaNombre
+                    +mixinCasillasInput
+                .fichaInputs#fichaContrasena
+                    +mixinCasillasInput
+                .fichaInputs#fichaApellido
+                    +mixinCasillasInput
+        .blocBotones

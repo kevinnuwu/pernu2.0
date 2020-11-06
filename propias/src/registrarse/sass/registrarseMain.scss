@@ -1,0 +1,11 @@
+@import "../../layouts/sass/config/paletaColores";
+@import "../../layouts/sass/config/mixins";
+@import "../../layouts/sass/modules/cuerpoIndex";
+@import "../../layouts/sass/modules/nav";
+@import "modules/contenidoRegistrarse"; 
+ 
+
+nav a img {
+    width: 3em;
+    height: 3em;
+}

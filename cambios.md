@@ -10,4 +10,8 @@
 ### **Archivos**
 Se crea la base de la barra de lista de productos
 
+## 2.0.1 (6/11/2020)
+### **General**
+Se elimina el sistema ruby, todos los comandos Sass deben ser remplazados por la sintaxis de _node-sass_
+
 

@@ -5,13 +5,16 @@
   "main": "index.js",
   "scripts": {
     "barraUsuarioAuthPug": "pug -P -w propias/barra-usuario-autenticado/src/pug -o propias/barra-usuario-autenticado/public/",
-    "barraUsuarioAuthSass": "sass -w  propias/barra-usuario-autenticado/src/sass/:propias/barra-usuario-autenticado/public/css/",
+    "barraUsuarioAuthSass": "node-sass -w  propias/barra-usuario-autenticado/src/sass/:propias/barra-usuario-autenticado/public/css/",
     "barraListaProductosPug": "pug -P -w propias/barra-usuario-autenticado/src/barra-lista-productos/pug -o propias/barra-usuario-autenticado/public/",
-    "barraListaProductosSass": "sass -w  propias/barra-usuario-autenticado/src/barra-lista-productos/sass/:propias/barra-usuario-autenticado/public/css/"
+    "barraListaProductosSass": "node-sass -w  propias/barra-usuario-autenticado/src/barra-lista-productos/sass/:propias/barra-usuario-autenticado/public/css/",
+    "registrarseSass": "node-sass -w  propias/src/registrarse/sass/ -o propias/public/css/",
+    "registrarsePug": "pug -P -w propias/src/registrarse/pug -o propias/public/"
   },
-  "author": "",
+  "author": "Kevinn",
   "license": "ISC",
   "dependencies": {
+    "node-sass": "^5.0.0",
     "pug-cli2": "^1.0.0-alpha6.1"
   }
 }

@@ -9,7 +9,7 @@
     ]
   },
   "hosting": {
-    "public": "propias/sitio-web-unido/public/",
+    "public": "propias/public/",
     "ignore": [
       "firebase.json",
       "**/.*",
