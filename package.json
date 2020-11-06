@@ -4,12 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "barraUsuarioAuthPug": "pug -P -w propias/barra-usuario-autenticado/src/pug -o propias/barra-usuario-autenticado/public/",
-    "barraUsuarioAuthSass": "node-sass -w  propias/barra-usuario-autenticado/src/sass/:propias/barra-usuario-autenticado/public/css/",
-    "barraListaProductosPug": "pug -P -w propias/barra-usuario-autenticado/src/barra-lista-productos/pug -o propias/barra-usuario-autenticado/public/",
-    "barraListaProductosSass": "node-sass -w  propias/barra-usuario-autenticado/src/barra-lista-productos/sass/:propias/barra-usuario-autenticado/public/css/",
-    "registrarseSass": "node-sass -w  propias/src/registrarse/sass/ -o propias/public/css/",
-    "registrarsePug": "pug -P -w propias/src/registrarse/pug -o propias/public/"
+    "pagesPug": "pug -P -w propias/pages/ -o propias/public/",
+    "indexPug": "pug -P -w propias/pages/index/pug -o propias/public/",
+    "indexSass": "node-sass -w propias/pages/index/sass/ -o propias/public/css/",
+    "tiendaSass": "node-sass -w propias/pages/tienda/sass/ -o propias/public/css/",
+    "productoExpanSass": "node-sass -w propias/pages/producto-expandido/sass/ -o propias/public/css/"
   },
   "author": "Kevinn",
   "license": "ISC",

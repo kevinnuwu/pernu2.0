@@ -1,4 +1,4 @@
-# Cambios ✏️
+# Cambios Pernu 1 ✏️
     "No se van a declarar los archivos base ni las extensiones cuando sus carpetas dominantes son descriptivas"
 ## 1.0 (4/11/2020)
 ### **Archivos**
@@ -18,5 +18,10 @@ Se elimina el sistema ruby, todos los comandos Sass deben ser remplazados por la
 Se crea las bases para página de registrarse 
 
 - [ ]  Pendiente crear la barra de botones
+
+## 3.0
+### **General**
+Se 
+
 
 
