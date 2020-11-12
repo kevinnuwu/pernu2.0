@@ -1,6 +1,9 @@
 body {
   margin: 0; }
 
+button {
+  cursor: pointer; }
+
 .bloque {
   display: flex;
   background: #18181c;
@@ -467,5 +470,3 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: 1em; }
-
-/*# sourceMappingURL=barraListaProductosMain.css.map */

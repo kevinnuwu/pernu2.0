@@ -1,6 +1,9 @@
 body {
   margin: 0; }
 
+button {
+  cursor: pointer; }
+
 .bloque {
   display: flex;
   background: #18181c;
@@ -121,5 +124,3 @@ button#historialDeComprasBoton {
   background: cyan;
   height: 40%;
   width: 100% !important; }
-
-/*# sourceMappingURL=barraUsuarioAuthMain.css.map */
