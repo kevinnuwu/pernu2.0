@@ -18,3 +18,14 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@mixin button ($height: false, $width: false){
+    cursor: pointer;
+    @if $height{
+        height: $height;
+        width: $width;
+    } @else{
+        height: 25%;
+        width: 25%;
+    }
+}

@@ -2,7 +2,9 @@ body {
   margin: 0; }
 
 button {
-  cursor: pointer; }
+  cursor: pointer;
+  height: 25%;
+  width: 25%; }
 
 .bloque {
   display: flex;
@@ -131,3 +133,16 @@ li {
 nav a img {
   width: 3em;
   height: 3em; }
+
+.blocBotones {
+  padding: 0.5em 0;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  display: flex; }
+
+.botonBlocBotones {
+  cursor: pointer;
+  height: 40%;
+  width: 15%;
+  margin: 0 2em; }
