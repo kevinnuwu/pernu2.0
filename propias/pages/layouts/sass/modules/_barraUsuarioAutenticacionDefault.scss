@@ -65,6 +65,3 @@
     .bloqueBotonesBarraUsuario{
         @include flexItem(none, 40%, 90%, "!important")
     }
-    button#historialDeComprasBoton{
-        @include flexItem(cyan, 40%, 100%, "!important")
-    }

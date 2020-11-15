@@ -1,6 +1,13 @@
 @import "../../layouts/sass/config/paletaColores";
+@import "../../layouts/sass/config/mixins";
 @import "../../layouts/sass/modules/cuerpoIndex";
 @import "../../layouts/sass/modules/barraUsuarioAutenticacionDefault";
+
+
+.bloqueBotonesBarraUsuario{
+    @include flexFlow(space-between, center);
+}
+
 button.boton{
-    @include flexItem(cyan, 40%, 100%, "!important")
+    @include flexItem(black, 40%, 45%);
 }

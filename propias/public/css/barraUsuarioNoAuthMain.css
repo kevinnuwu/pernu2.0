@@ -1,0 +1,157 @@
+:root {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  height: 100vh; }
+
+button {
+  cursor: pointer;
+  height: 25%;
+  width: 25%; }
+
+.contenedor {
+  height: 80%;
+  width: 100%;
+  background-color: black;
+  color: white; }
+
+.bloque {
+  display: flex;
+  background: #18181c;
+  height: 30vh;
+  align-items: center;
+  justify-content: center; }
+  .bloque .titulo {
+    margin-right: auto;
+    align-self: flex-start;
+    font-family: 'volaroid_scriptregular';
+    font-size: 40px;
+    font-width: 50%; }
+  .bloque .descripcionDelTitulo {
+    font-family: 'maxwell_boldregular';
+    font-size: 23px; }
+  .bloque .bloqueInvisible {
+    margin-left: auto; }
+  .bloque .titulo, .bloque .descripcionDelTitulo {
+    color: white;
+    flex: 1; }
+
+.bloque:nth-child(even) {
+  display: flex;
+  background: #75c8aeff;
+  height: 30vh;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row-reverse; }
+
+.contenedorBarraIconos {
+  background-color: burlywood;
+  height: 100vh;
+  width: 30%;
+  margin-left: auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  display: flex; }
+
+.bloqueIconosBarra {
+  background-color: cornflowerblue;
+  height: 7%;
+  background: crimson;
+  height: 7%;
+  width: 100% ;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  display: flex; }
+  .bloqueIconosBarra .iconoUsuario {
+    height: 50%;
+    background: skyblue;
+    height: 50%;
+    width: 25% ; }
+  .bloqueIconosBarra .iconoListado {
+    height: 50%;
+    background: darkviolet;
+    height: 50%;
+    width: 25% ; }
+
+.bloqueFotoGenerada {
+  height: 30%;
+  background: black;
+  height: 30%;
+  width: 100% ;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  display: flex; }
+  .bloqueFotoGenerada .fotoGenerada {
+    background-color: cornsilk;
+    height: 90%;
+    background: goldenrod;
+    height: 90%;
+    width: 50% ;
+    border-radius: 50%; }
+
+.contenedorInformacionUsuario {
+  height: 60%;
+  background: none;
+  height: 60%;
+  width: 100% ;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  padding: 2em;
+  box-sizing: border-box; }
+
+.tituloHaciaUsuario {
+  height: 15%;
+  background: deeppink;
+  height: 15%;
+  width: 90% ;
+  margin-bottom: 1em; }
+
+.descripcionHaciaUsuario {
+  height: 50%;
+  background: darkviolet;
+  height: 50%;
+  width: 90% ; }
+
+.bloqueBotonesBarraUsuario {
+  height: 30%;
+  background: none;
+  height: 30%;
+  width: 80% ;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  display: flex; }
+  .bloqueBotonesBarraUsuario .sesionBarraUsuario {
+    height: 40%;
+    background: orangered;
+    height: 40%;
+    width: 40% ; }
+  .bloqueBotonesBarraUsuario .registrarseBarraUsuario {
+    height: 40%;
+    background: orange;
+    height: 40%;
+    width: 40% ; }
+
+.bloqueBotonesBarraUsuario {
+  height: 40%;
+  background: none;
+  height: 40%;
+  width: 90% !important; }
+
+.bloqueBotonesBarraUsuario {
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  display: flex; }
+
+button.boton {
+  height: 40%;
+  background: black;
+  height: 40%;
+  width: 45% ; }

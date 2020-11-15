@@ -1,7 +1,15 @@
-@mixin flexItem ($backgroundColor: white, $height: 100%, $width: 40%, $important: ""){
-    background: $backgroundColor;
-    height:$height;
-    width: $width unquote($important);
+@mixin flexItem ($backgroundColor: false, $height: 100%, $width: 40%, $important: ""){
+    @if $backgroundColor{
+        height: $height;
+        background: $backgroundColor;
+        height:$height;
+        width: $width unquote($important);
+    } @else {
+        height: $height;
+        background: white;
+        height:$height;
+        width: $width unquote($important);
+    }
 }
 
 @mixin flexFlow ($justify: flex-start, $align: flex-start, $direction: row,$display: flex){
