@@ -7,10 +7,9 @@ block contentTemplate
     .contenedor#imagen
     .blocDescripcion
     .contenedor
-        .panel
-        .panel
-        .panel
-        .panel
-        .panel
-        .panel
-        .panel
+        include config/_arrays 
+        each circulo in circulos
+            .panel
+                h1= circulo.nombre
+                h2= circulo.apellidos
+                    
