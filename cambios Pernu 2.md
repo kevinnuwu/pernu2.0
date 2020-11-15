@@ -14,3 +14,11 @@ Se termina de maquetar la página registrarse, se montan las bases para la pági
 ### *General** 
 Se termina la página de confirmación de correo; se montan las bases para el _Inicio de Sesión_
 
+
+## 1.3
+### **General**
+Se termina la página de _Inicio de Sesión_; se montan las bases para la _BarraUsuarioNoAuth_
+
+## 1.4
+### **General**
+Se termina la _BarraUsuarioNoAuth_; se montan las bases para el _Historial de Compras_
