@@ -2,3 +2,42 @@
 @import "../../layouts/sass/config/mixins";
 @import "../../layouts/sass/modules/cuerpoIndex";
 @import "../../layouts/sass/modules/nav";
+
+ul{
+    background-color: deeppink !important;
+}
+
+.contenedor{
+    @include contenedor(200%);
+    @include flexFlow(space-evenly, center);
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    overflow: auto ;
+    &::-webkit-scrollbar {
+        display: none;
+   } 
+    // padding: 4em;
+
+        &#imagen{
+            @include contenedor(70%);
+            background-color: deeppink; 
+        }
+        
+}
+
+
+.blocDescripcion{
+    @include flexItem(white, 15em, 100%);
+    align-self: flex-start;
+    margin-bottom: 2em;
+}
+
+.panel{
+    @include flexItem(midnightblue, 25em, 80%);
+    border: 1em solid black;
+    
+      &:nth-child(even){
+        @include flexItem(mediumvioletred, 25em, 80%);
+        border: 1em solid black
+      }  
+}

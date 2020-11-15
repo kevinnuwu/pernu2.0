@@ -62,3 +62,48 @@ li {
   margin: 0 25px;
   list-style-type: none;
   font-family: 'volaroid_scriptregular'; }
+
+ul {
+  background-color: deeppink !important; }
+
+.contenedor {
+  height: 200%;
+  width: 100%;
+  background-color: black;
+  color: white;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  overflow: auto; }
+  .contenedor::-webkit-scrollbar {
+    display: none; }
+  .contenedor#imagen {
+    height: 70%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    background-color: deeppink; }
+
+.blocDescripcion {
+  height: 15em;
+  background: white;
+  height: 15em;
+  width: 100% ;
+  align-self: flex-start;
+  margin-bottom: 2em; }
+
+.panel {
+  height: 25em;
+  background: midnightblue;
+  height: 25em;
+  width: 80% ;
+  border: 1em solid black; }
+  .panel:nth-child(even) {
+    height: 25em;
+    background: mediumvioletred;
+    height: 25em;
+    width: 80% ;
+    border: 1em solid black; }
