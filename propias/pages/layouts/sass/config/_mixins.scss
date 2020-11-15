@@ -29,3 +29,18 @@
         width: 25%;
     }
 }
+
+@mixin contenedor ($height: false, $width: 100%, $bg-color: black, $color: white) {
+    @if $height{
+        height: $height;
+        width: $width;
+        background-color: $bg-color;
+        color: $color;
+    } @else{
+        height: 80%;
+        width: $width;
+        background-color: $bg-color;
+        color: $color;
+    }
+}
+

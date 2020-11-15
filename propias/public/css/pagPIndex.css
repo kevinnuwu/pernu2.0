@@ -1,5 +1,16 @@
 body {
-  margin: 0; }
+  margin: 0;
+  height: 100vh; }
+
+button {
+  cursor: pointer;
+  height: 25%;
+  width: 25%; }
+
+.contenedor {
+  height: 80%;
+  width: 100%;
+  background-color: black; }
 
 .bloque {
   display: flex;

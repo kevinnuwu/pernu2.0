@@ -1,0 +1,28 @@
+@import "../../layouts/sass/config/paletaColores";
+@import "../../layouts/sass/config/mixins";
+@import "../../layouts/sass/modules/cuerpoIndex";
+@import "../../layouts/sass/modules/nav";
+
+.contenedor{
+    @include contenedor(60%);
+    @include flexFlow(space-between,center, column);
+    padding: 2em;    
+    box-sizing: border-box;
+}
+.titulo{
+    @include flexItem( yellow, 25%, 30%);
+    @include flexFlow (center, center);
+    color: black;
+}
+
+.descripcion{
+    @include flexItem(crimson, 20%, 30%,);
+    @include flexFlow (center, center);
+    margin-top: -3em;
+    
+}
+
+.icono{
+    @include flexItem(indigo, 15%, 30%);
+    @include flexFlow (center, center);
+}

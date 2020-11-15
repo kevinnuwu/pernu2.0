@@ -1,11 +1,17 @@
+@import "../config/mixins";
+
 body{
     margin: 0;
+    height: 100vh;
 }
 
 button{
     @include button; 
 }
-
+.contenedor{
+    @include contenedor;
+}
+//La wea de abajo son los estilos de la página index =b
 .bloque{
     display: flex;
     background: $brown;
