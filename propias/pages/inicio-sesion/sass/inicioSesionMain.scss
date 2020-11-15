@@ -63,7 +63,7 @@
 .barraBotones{
     @include flexItem(gold, 20%, 100%);
     @include flexFlow(space-between, center);   
-    padding: 0.5em 2 em;
+    padding: 0.5em 2em;
     box-sizing: border-box;
 }
 
