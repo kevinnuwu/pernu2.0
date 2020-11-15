@@ -10,14 +10,6 @@ nav a img {
     height: 3em;
 }
 
-.blocBotones{
-    padding: 0.5em 0;
-    @include flexFlow(space-between, center);    
-}
-.botonBlocBotones{
-    @include button(40%, 15%);
-    margin: 0 2em;
-}
 
 // @mixin button ($height: false, $width: false){
 //     cursor: pointer;

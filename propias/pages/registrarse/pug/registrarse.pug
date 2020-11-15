@@ -9,11 +9,11 @@ block contentTemplate
     mixin mixinCasillasInput
         .casillaTituloInput titulo
         input.casillaRecoleccionInput
-    .contenedorRegistrarse
-        .blocInputs
-            .blocInputsFila1
+    .contenedor
+        .bloc
+            .InputsFila1
                 #tituloRegistrarse Registrarse
-            form.blocInputsFila2
+            form.InputsFila2
                 .fichaInputs#fichaCorreoElectronico
                     +mixinCasillasInput
                 .fichaInputs#fichaNombre
@@ -22,6 +22,6 @@ block contentTemplate
                     +mixinCasillasInput
                 .fichaInputs#fichaApellido
                     +mixinCasillasInput
-        .blocBotones
-            button.botonBlocBotones
-            button.botonBlocBotones
+        .barraBotones
+            button.boton
+            button.boton

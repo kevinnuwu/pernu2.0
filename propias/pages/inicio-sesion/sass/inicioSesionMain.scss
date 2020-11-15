@@ -1,11 +1,11 @@
-@import "../../../layouts/sass/config/mixins";
-:root{
-    box-sizing: border-box;
-}
+@import "../../layouts/sass/config/paletaColores";
+@import "../../layouts/sass/config/mixins";
+@import "../../layouts/sass/modules/cuerpoIndex";
+@import "../../layouts/sass/modules/nav";
 
 .contenedor{
+    @include contenedor (90%);
     @include flexFlow(center, center, column);
-    @include contenedor (90%)
 }
 
 .bloc{
@@ -26,7 +26,7 @@
 
 .InputsFila2{
     @include flexItem(black, 80%, 100%);
-    @include flexFlow();
+    @include flexFlow(flex-start,flex-start, column);
     box-sizing: border-box;
     flex-wrap: wrap;
 }
@@ -63,29 +63,11 @@
 .barraBotones{
     @include flexItem(gold, 20%, 100%);
     @include flexFlow(space-between, center);   
-    padding: 0.5em 0;
+    padding: 0.5em 2 em;
+    box-sizing: border-box;
 }
 
 .boton{
     @include button(40%, 15%);
-    margin: 0 2em;
+    margin-left: auto;
 }
-// @mixin flexItem ($backgroundColor: white, $height: 100%, $width: 40%, $important: ""){
-    //     background: $backgroundColor;
-//     height:$height;
-//     width: $width unquote($important);
-// }
-
-// @mixin flexFlow ($justify: flex-start, $align: flex-start, $direction: row,$display: flex){
-//     justify-content: $justify;
-//     align-items: $align;
-//     flex-direction: $direction;
-//     display: $display;
-
-// }
-// @mixin backgroundImage($path: black){
-//     background: url($path);
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-// }

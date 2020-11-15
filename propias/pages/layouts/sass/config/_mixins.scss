@@ -43,4 +43,16 @@
         color: $color;
     }
 }
-
+// @mixin bloc ($height: false, $width: 100%, $bg-color: crimson, $color: white) {
+//     @if $height{
+//         height: $height;
+//         width: $width;
+//         background-color: $bg-color;
+//         color: $color;
+//     } @else{
+//         height: 50%;
+//         width: $width;
+//         background-color: $bg-color;
+//         color: $color;
+//     }
+// }

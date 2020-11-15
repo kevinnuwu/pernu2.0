@@ -1,0 +1,20 @@
+extends ../../layouts/pug/_defaultTemplate
+block head
+    link(rel="stylesheet", href="../../css/inicioSesionMain.css")
+block contenidoNav
+    li: a(href="../../index.html") index
+block contentTemplate
+    mixin mixinCasillasInput(titulo)
+        .casillaTituloInput= titulo
+        input.casillaRecoleccionInput
+    .contenedor
+        .bloc
+            .InputsFila1
+                #tituloRegistrarse Inicio Sesión
+            form.InputsFila2
+                .fichaInputs#fichaCorreoElectronico
+                    +mixinCasillasInput("correo")
+                .fichaInputs#fichaContrasena
+                    +mixinCasillasInput("contra")
+        .barraBotones
+            button.boton Iniciar

@@ -12,7 +12,8 @@
     "barraUsuarioAuthSass": "node-sass -w propias/pages/barra-usuario-autenticado/sass/ -o propias/public/css/",
     "barraListaProductSass": "node-sass -w propias/pages/barra-lista-productos/sass/ -o propias/public/css/",
     "registrarseSass": "node-sass -w propias/pages/registrarse/sass/ -o propias/public/css/",
-    "confirmacionCorreoSass": "node-sass -w propias/pages/confirmacion-correo/sass/ -o propias/public/css/"
+    "confirmacionCorreoSass": "node-sass -w propias/pages/confirmacion-correo/sass/ -o propias/public/css/",
+    "inicioSesionSass": "node-sass -w propias/pages/inicio-sesion/sass/ -o propias/public/css/"
   },
   "author": "Kevinn",
   "license": "ISC",
