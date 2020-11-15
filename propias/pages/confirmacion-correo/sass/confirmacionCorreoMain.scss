@@ -16,7 +16,7 @@
 }
 
 .descripcion{
-    @include flexItem(crimson, 20%, 30%,);
+    @include flexItem(crimson, 20%, 30%);
     @include flexFlow (center, center);
     margin-top: -3em;
     
