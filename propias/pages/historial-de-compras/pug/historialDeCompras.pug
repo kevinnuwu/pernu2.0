@@ -8,8 +8,6 @@ block contentTemplate
     .blocDescripcion
     .contenedor
         include config/_arrays 
-        each circulo in circulos
+        each circulo, index in circulos
             .panel
-                h1= circulo.nombre
-                h2= circulo.apellidos
-                    
+                .circulo(id= `item-${index}`, class= `${circulo.color}`)= circulo.color
