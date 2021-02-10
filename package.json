@@ -4,18 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pagesPug": "pug -P -w propias/pages/ -o propias/public/",
-    "indexPug": "pug -P -w propias/pages/index/pug -o propias/public/",
-    "indexSass": "node-sass -w propias/pages/index/sass/ -o propias/public/css/",
-    "tiendaSass": "node-sass -w propias/pages/tienda/sass/ -o propias/public/css/",
-    "productoExpanSass": "node-sass -w propias/pages/producto-expandido/sass/ -o propias/public/css/",
-    "barraUsuarioAuthSass": "node-sass -w propias/pages/barra-usuario-autenticado/sass/ -o propias/public/css/",
-    "barraUsuarioNoAuthSass": "node-sass -w propias/pages/barra-usuario-no-autenticado/sass/ -o propias/public/css/",
-    "barraListaProductSass": "node-sass -w propias/pages/barra-lista-productos/sass/ -o propias/public/css/",
-    "registrarseSass": "node-sass -w propias/pages/registrarse/sass/ -o propias/public/css/",
-    "confirmacionCorreoSass": "node-sass -w propias/pages/confirmacion-correo/sass/ -o propias/public/css/",
-    "inicioSesionSass": "node-sass -w propias/pages/inicio-sesion/sass/ -o propias/public/css/",
-    "historialDeComprasSass": "node-sass -w propias/pages/historial-de-compras/sass/ -o propias/public/css/"
+    "pagesPug": "pug -P -w pug/ -o ./",
+    "pagesSass": "node-sass -w sass/ -o css/"
   },
   "author": "Kevinn",
   "license": "ISC",

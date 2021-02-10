@@ -1,0 +1,27 @@
+extends layout/_html-body
+block nav
+    nav
+        ul
+            +navLi("index.html", "Pernu")
+            
+block bodyContent 
+    .o-contenedor   
+        .c-contenedor__imagen
+        .c-contenedor__texto-bienvenida
+            .c-texto-bienvenida__boton
+                button: a(href="tienda.html") Ir a Tienda 
+    .o-contenedor--productos
+        mixin bloqueZapatos
+            .o-productos__bloque 
+                .c-bloque__imagen#zapatilla-cuero 
+                .c.bloque__texto 
+                    .c-bloque__texto__titulo.u-centrar-hijo Zapatos de Cuero
+                    .c-bloque__texto__descripcion.u-centrar-hijo Descripción
+        +bloqueZapatos
+        +bloqueZapatos
+        +bloqueZapatos
+    .o-acerca
+        .c-acerca__titulo.u-centrar-hijo: p Acerca de 
+        .c-acerca__descripcion
+            .c-acerca__descripcion__texto.u-centrar-hijo: p Descripción
+            .u-acerca__descripcion__imagen
