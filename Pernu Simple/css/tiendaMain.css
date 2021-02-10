@@ -1,0 +1,704 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Open+Sans:ital,wght@1,800&display=swap");
+.u-red {
+  background-color: red;
+  border-radius: 24px;
+  height: 1em;
+  width: 1em;
+  margin-left: 1em; }
+
+.u-brown {
+  background-color: brown;
+  border-radius: 24px;
+  height: 1em;
+  width: 1em;
+  margin-left: 1em; }
+
+.u-orange {
+  background-color: orange;
+  border-radius: 24px;
+  height: 1em;
+  width: 1em;
+  margin-left: 1em; }
+
+:root {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  height: 100vh; }
+
+button {
+  cursor: pointer;
+  height: 25%;
+  width: 25%;
+  border: none; }
+
+#barraLateral {
+  margin-left: auto;
+  cursor: pointer; }
+
+.u-centrar-hijo {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex; }
+
+.u-reductor-circulos {
+  border-radius: 24px;
+  height: 0.5em;
+  width: 0.5em;
+  margin-left: 0.7em;
+  margin-bottom: 0.3em; }
+
+.u-reductor-tallas {
+  background-color: white;
+  height: 1.5em;
+  width: 1.5em;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  margin: 0 0.3em; }
+
+.u-blanco {
+  background-color: white !important; }
+
+.bloque {
+  display: flex;
+  background: #5a3d2b;
+  height: 30vh;
+  align-items: center;
+  justify-content: center; }
+  .bloque .titulo {
+    margin-right: auto;
+    align-self: flex-start;
+    font-family: 'volaroid_scriptregular';
+    font-size: 40px;
+    font-width: 50%; }
+  .bloque .descripcionDelTitulo {
+    font-family: 'maxwell_boldregular';
+    font-size: 23px; }
+  .bloque .bloqueInvisible {
+    margin-left: auto; }
+  .bloque .titulo, .bloque .descripcionDelTitulo {
+    color: white;
+    flex: 1; }
+
+.bloque:nth-child(even) {
+  display: flex;
+  background: #75c8aeff;
+  height: 30vh;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row-reverse; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+ul {
+  display: flex;
+  justify-content: center;
+  background: #75c8aeff;
+  margin: 0 0;
+  align-items: center;
+  height: 10vh; }
+
+li {
+  color: #5a3d2b;
+  margin: 0 25px;
+  list-style-type: none;
+  font-family: 'Open Sans'; }
+
+.contenedorBarraProductos {
+  height: 100%;
+  width: 100%;
+  background-color: teal;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  display: none; }
+
+.blocProductosLista {
+  height: 100%;
+  background: #5a3d2b;
+  height: 100%;
+  width: 100% ;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto; }
+  .blocProductosLista::-webkit-scrollbar {
+    display: none; }
+
+.panelProductosLista {
+  height: 30%;
+  background: white;
+  height: 30%;
+  width: 90% ;
+  margin: 0.5em; }
+
+.barraIrSumario {
+  height: 15%;
+  background: #75c8aeff;
+  height: 15%;
+  width: 100% ;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row;
+  display: flex;
+  padding: 1em;
+  box-sizing: border-box; }
+  .barraIrSumario #botonIrSumario {
+    height: 70%;
+    background: #5a3d2b;
+    height: 70%;
+    width: 50% ;
+    cursor: pointer;
+    height: 70%;
+    width: 50% !important;
+    color: white; }
+
+.contenedorProductoEx {
+  background-color: aquamarine;
+  width: 100%;
+  height: 100%;
+  display: flex; }
+
+.fotoProductoEx {
+  height: 100%;
+  background: blue;
+  height: 100%;
+  width: 50% ; }
+
+.detallesProductoEx {
+  height: 100%;
+  background: red;
+  height: 100%;
+  width: 50% ;
+  display: flex;
+  flex-direction: column; }
+
+.textoDetallesPr {
+  height: 20%;
+  background: white;
+  height: 20%;
+  width: 100% ;
+  display: flex;
+  flex-direction: column; }
+  .textoDetallesPr .tituloDetalles {
+    height: 100%;
+    background: white;
+    height: 100%;
+    width: 100% ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex; }
+  .textoDetallesPr .descripcionDetalles {
+    height: 50%;
+    background: white;
+    height: 50%;
+    width: 100% ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex; }
+
+.caracteristicasDetallesPr {
+  height: 80%;
+  background: #e0f80b;
+  height: 80%;
+  width: 100% ;
+  display: flex;
+  flex-direction: column; }
+  .caracteristicasDetallesPr .bloqueDetallesTallas {
+    height: 70%;
+    background: black;
+    height: 70%;
+    width: 100% ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    .caracteristicasDetallesPr .bloqueDetallesTallas .cuadradoItemTallas {
+      height: 100%;
+      background: black;
+      height: 100%;
+      width: 60% ;
+      flex-wrap: wrap;
+      padding: 1em;
+      display: flex;
+      box-sizing: border-box;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      display: flex; }
+  .caracteristicasDetallesPr .bloqueDetallesColores {
+    height: 30%;
+    background: black;
+    height: 30%;
+    width: 100% ;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    display: flex; }
+    .caracteristicasDetallesPr .bloqueDetallesColores .cuadradoItemColores {
+      height: 100%;
+      background: black;
+      height: 100%;
+      width: 100% ;
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-right: 0.3em;
+      padding-left: 0.3em;
+      box-sizing: border-box;
+      align-items: center;
+      justify-content: flex-end; }
+
+.anadirDetallesPr {
+  height: 20%;
+  background: white;
+  height: 20%;
+  width: 100% ;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row;
+  display: flex;
+  box-sizing: border-box;
+  padding: 1em; }
+
+.contenedorAnadirDetalles {
+  height: 50%;
+  background: 50%;
+  height: 50%;
+  width: 40% ;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  display: flex; }
+  .contenedorAnadirDetalles .bloqueBotonesCantidad {
+    height: 100%;
+    background: white;
+    height: 100%;
+    width: 33% ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex; }
+  .contenedorAnadirDetalles #flechaArriba, .contenedorAnadirDetalles #flechaAbajo {
+    height: 100%;
+    background: none;
+    height: 100%;
+    width: 100% ;
+    background: url("https://pbs.twimg.com/profile_images/1108111327963344897/177ypvoH_400x400.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .contenedorAnadirDetalles .bloqueCantidadAnadir {
+    height: 100%;
+    background: white;
+    height: 100%;
+    width: 33% ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    border: 0.3em solid black;
+    box-sizing: border-box; }
+  .contenedorAnadirDetalles .iconoAnadir {
+    height: 100%;
+    background: white url("https://pbs.twimg.com/profile_images/1108111327963344897/177ypvoH_400x400.png");
+    height: 100%;
+    width: 34% ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 1em; }
+
+#zapatillas-cuero {
+  background: url("https://cdn.shortpixel.ai/spai/w_1003+q_lossy+ex_1+ret_img+to_webp/https://megaricos.com/wp-content/uploads/2016/09/los-zapatos-para-hombres-macc81s-caros-del-mundo.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.contenedorBarraIconos {
+  background-color: burlywood;
+  height: 0%;
+  width: 0%;
+  margin-left: auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  display: flex;
+  position: absolute; }
+
+.bloqueIconosBarra {
+  background-color: cornflowerblue;
+  height: 7%;
+  background: crimson;
+  height: 7%;
+  width: 100% ;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  display: flex; }
+  .bloqueIconosBarra .iconoUsuario {
+    height: 50%;
+    background: skyblue;
+    height: 50%;
+    width: 25% ; }
+  .bloqueIconosBarra .iconoListado {
+    height: 50%;
+    background: darkviolet;
+    height: 50%;
+    width: 25% ; }
+
+.bloqueFotoGenerada {
+  height: 30%;
+  background: black;
+  height: 30%;
+  width: 100% ;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  display: flex; }
+  .bloqueFotoGenerada .fotoGenerada {
+    background-color: cornsilk;
+    height: 90%;
+    background: goldenrod;
+    height: 90%;
+    width: 50% ;
+    border-radius: 50%; }
+
+.contenedorInformacionUsuario {
+  height: 60%;
+  background: none;
+  height: 60%;
+  width: 100% ;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  padding: 2em;
+  box-sizing: border-box; }
+
+.tituloHaciaUsuario {
+  height: 15%;
+  background: deeppink;
+  height: 15%;
+  width: 90% ;
+  margin-bottom: 1em; }
+
+.descripcionHaciaUsuario {
+  height: 50%;
+  background: darkviolet;
+  height: 50%;
+  width: 90% ; }
+
+.bloqueBotonesBarraUsuario {
+  height: 30%;
+  background: none;
+  height: 30%;
+  width: 80% ;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  display: flex; }
+  .bloqueBotonesBarraUsuario .sesionBarraUsuario {
+    height: 40%;
+    background: orangered;
+    height: 40%;
+    width: 40% ; }
+  .bloqueBotonesBarraUsuario .registrarseBarraUsuario {
+    height: 40%;
+    background: orange;
+    height: 40%;
+    width: 40% ; }
+
+.bloqueBotonesBarraUsuario {
+  height: 40%;
+  background: none;
+  height: 40%;
+  width: 90% ; }
+
+.contenedorPaneles {
+  background-color: #75c8aeff;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: auto; }
+  .contenedorPaneles::-webkit-scrollbar {
+    display: none; }
+
+.bloquePanel {
+  background-color: lightgreen;
+  height: 40%;
+  width: 20%;
+  margin: 2em 0.5em; }
+
+.fotoPanel {
+  background: url("https://cdn.shortpixel.ai/spai/w_1003+q_lossy+ex_1+ret_img+to_webp/https://megaricos.com/wp-content/uploads/2016/09/los-zapatos-para-hombres-macc81s-caros-del-mundo.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70%;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  cursor: pointer; }
+  .fotoPanel .boton--anadir-panel {
+    background-color: black;
+    height: 30%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .fotoPanel .boton--anadir-panel .textoBotonAnadirPanel {
+      color: white; }
+
+.caracteristicasPanel {
+  background-color: black;
+  height: 31%;
+  display: flex; }
+  .caracteristicasPanel .tallasPanel {
+    width: 36%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    word-wrap: break-word;
+    color: white; }
+  .caracteristicasPanel .coloresPanel {
+    background-color: black;
+    display: flex;
+    width: 65%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .caracteristicasPanel .coloresPanel .circulosColoresPanel {
+      border-radius: 24px;
+      height: 1em;
+      width: 1em;
+      margin-left: 1em; }
+
+.circulosColoresPanel#circuloColores1 {
+  background-color: crimson; }
+
+.circulosColoresPanel#circuloColores2 {
+  background-color: blue; }
+
+.circulosColoresPanel#circuloColores3 {
+  background-color: mediumspringgreen; }
+
+.circulosColoresPanel#circuloColores4 {
+  background-color: chocolate; }
+
+.o-itemTalla {
+  background-color: white;
+  height: 3em;
+  width: 3em;
+  margin-left: 1em;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  display: flex; }
+
+.o-contenedor__producto--expandido {
+  background-color: aquamarine;
+  width: 100%;
+  height: 100vh;
+  display: none; }
+
+.producto--expandido__foto {
+  height: 100%;
+  background: blue;
+  height: 100%;
+  width: 50% ;
+  background: url("https://cdn.shortpixel.ai/spai/w_1003+q_lossy+ex_1+ret_img+to_webp/https://megaricos.com/wp-content/uploads/2016/09/los-zapatos-para-hombres-macc81s-caros-del-mundo.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.producto--expandido__detalles {
+  height: 100%;
+  background: red;
+  height: 100%;
+  width: 50% ;
+  display: flex;
+  flex-direction: column; }
+
+.c-expandido__detalles__texto {
+  height: 45%;
+  background: white;
+  height: 45%;
+  width: 100 ;
+  display: flex;
+  flex-direction: column; }
+
+.detalles__texto--titulo {
+  height: 50%;
+  background: white;
+  height: 50%;
+  width: 100% ;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  display: flex; }
+
+.detalles__texto--descripcion {
+  height: 50%;
+  background: white;
+  height: 50%;
+  width: 100% ;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  display: flex; }
+
+.c-expandido__detalles__caracteristicas {
+  height: 55%;
+  background: white;
+  height: 55%;
+  width: 100% ;
+  display: flex;
+  flex-direction: column; }
+
+.s-detalles__caracteristicas--tallas {
+  height: 50%;
+  background: black;
+  height: 50%;
+  width: 100% ;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+.c-caracteristicas--tallas__items {
+  height: 100%;
+  background: black;
+  height: 100%;
+  width: 60% ;
+  flex-wrap: wrap;
+  padding: 1em;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  display: flex; }
+
+.s-detalles__caracteristicas--colores {
+  height: 50%;
+  background: black;
+  height: 50%;
+  width: 100% ;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  display: flex; }
+
+.c-caracteristicas--colores__items {
+  height: 100%;
+  background: black;
+  height: 100%;
+  width: 40% ;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-end; }
+
+.c-anadir-detalles {
+  height: 20%;
+  background: white;
+  height: 20%;
+  width: 100 ;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row;
+  display: flex;
+  box-sizing: border-box;
+  padding: 1em; }
+
+.s-contenedor-anadir-detalles {
+  height: 50%;
+  background: white;
+  height: 50%;
+  width: 50% ;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  display: flex; }
+
+.c-icono-anadir {
+  height: 100%;
+  background: black;
+  height: 100%;
+  width: 34% ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 1em;
+  color: white; }
+
+.o-contenedor--encabezado {
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex; }
+
+.c-contenedor--encabezado__imagen {
+  height: 80%;
+  background: black;
+  height: 80%;
+  width: 100% ;
+  /* The image used */
+  /* Center and scale the image nicely */
+  background: url("https://c8.alamy.com/comp/CN07PD/lots-of-sneaker-shoes-on-sale-CN07PD.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  display: flex; }
+
+.c-contenedor--encabezado__texto {
+  height: 20%;
+  background: white;
+  height: 20%;
+  width: 100% ;
+  padding: 1em;
+  box-sizing: border-box;
+  background-color: #5a3d2b;
+  color: white; }
+
+.texto-bienvenida {
+  height: 20%;
+  background: #75c8aeff;
+  height: 20%;
+  width: 20% ;
+  font-size: 2em;
+  font-family: 'Heebo', sans-serif; }
+
+.descripcion-bienvenida {
+  font-size: 2em;
+  font-weight: 600;
+  font-style: italic;
+  font-family: 'Open Sans', sans-serif;
+  color: white; }

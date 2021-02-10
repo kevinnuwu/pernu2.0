@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/tiendaMain.css"/>
+  </head>
+  <body>
+    <header> 
+      <nav>
+        <ul>
+          <li class="u-centrar">Pernu</li>
+          <li class="u-centrar"><a href="registrarse.html">Registrarse</a></li>
+          <li class="u-centrar"><a href="inicioSesion.html">Iniciar Sesión</a></li>
+          <li id="barraLateral" onclick="abrirBarra() ">|||</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="o-contenedor--encabezado">
+      <div class="c-contenedor--encabezado__imagen">
+        <div class="texto-bienvenida u-centrar-hijo">
+          <p>Tienda Pernu</p>
+        </div>
+      </div>
+      <div class="c-contenedor--encabezado__texto">
+        <div class="descripcion-bienvenida u-centrar-hijo">
+          <p>Calzado de Calidad a los mejores precios</p>
+        </div>
+      </div>
+    </div>
+    <div class="contenedorPaneles">
+          <div class="bloquePanel"><a class="fotoPanel" onclick="expandirProducto()">Dame Click
+              <button class="boton--anadir-panel">
+                <div class="textoBotonAnadirPanel">Añadir</div>
+              </button></a>
+            <div class="caracteristicasPanel">
+              <div class="coloresPanel">
+                <div class="circulosColoresPanel u-red"></div>
+                <div class="circulosColoresPanel u-orange"></div>
+                <div class="circulosColoresPanel u-brown"></div>
+              </div>
+              <div class="tallasPanel">26 - 30</div>
+            </div>
+          </div>
+    </div>
+    <div class="contenedorBarraIconos">
+      <div class="contenedorBarraProductos">
+        <button onclick="cerrarBarra()">Cerrar</button>
+        <div class="blocProductosLista">
+          <div class="panelProductosLista">
+            <div class="contenedorProductoEx">
+              <div class="fotoProductoEx" id="zapatillas-cuero"></div>
+              <div class="detallesProductoEx">
+                <div class="textoDetallesPr u-centrar-hijo">
+                  <p>Zapatillas de Cuero</p>
+                </div>
+                <div class="caracteristicasDetallesPr">
+                  <div class="bloqueDetallesTallas">
+                        <div class=" u-reductor-tallas">26</div>
+                        <div class=" u-reductor-tallas">28</div>
+                        <div class=" u-reductor-tallas">30</div>
+                  </div>
+                  <div class="bloqueDetallesColores">
+                    <div class="cuadradoItemColores">
+                          <div class="u-reductor-circulos u-red"></div>
+                          <div class="u-reductor-circulos u-brown"></div>
+                          <div class="u-reductor-circulos u-orange"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+                <div class="panelProductosLista u-blanco">
+                  <div class="contenedorProductoEx u-blanco">
+                    <div class="fotoProductoEx u-blanco"></div>
+                    <div class="detallesProductoEx u-blanco">
+                      <div class="textoDetallesPr u-blanco"></div>
+                      <div class="caracteristicasDetallesPr u-blanco">
+                        <div class="bloqueDetallesTallas u-blanco"></div>
+                        <div class="bloqueDetallesColores u-blanco">
+                          <div class="cuadradoItemColores u-blanco"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panelProductosLista u-blanco">
+                  <div class="contenedorProductoEx u-blanco">
+                    <div class="fotoProductoEx u-blanco"></div>
+                    <div class="detallesProductoEx u-blanco">
+                      <div class="textoDetallesPr u-blanco"></div>
+                      <div class="caracteristicasDetallesPr u-blanco">
+                        <div class="bloqueDetallesTallas u-blanco"></div>
+                        <div class="bloqueDetallesColores u-blanco">
+                          <div class="cuadradoItemColores u-blanco"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panelProductosLista u-blanco">
+                  <div class="contenedorProductoEx u-blanco">
+                    <div class="fotoProductoEx u-blanco"></div>
+                    <div class="detallesProductoEx u-blanco">
+                      <div class="textoDetallesPr u-blanco"></div>
+                      <div class="caracteristicasDetallesPr u-blanco">
+                        <div class="bloqueDetallesTallas u-blanco"></div>
+                        <div class="bloqueDetallesColores u-blanco">
+                          <div class="cuadradoItemColores u-blanco"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panelProductosLista u-blanco">
+                  <div class="contenedorProductoEx u-blanco">
+                    <div class="fotoProductoEx u-blanco"></div>
+                    <div class="detallesProductoEx u-blanco">
+                      <div class="textoDetallesPr u-blanco"></div>
+                      <div class="caracteristicasDetallesPr u-blanco">
+                        <div class="bloqueDetallesTallas u-blanco"></div>
+                        <div class="bloqueDetallesColores u-blanco">
+                          <div class="cuadradoItemColores u-blanco"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        </div>
+        <div class="barraIrSumario">
+          <button id="botonIrSumario"><a href="404.html">Ir a Sumario</a></button>
+        </div>
+      </div>
+    </div>
+    <div class="o-contenedor__producto--expandido">
+      <div class="producto--expandido__foto"></div>
+      <div class="producto--expandido__detalles">
+        <div class="c-expandido__detalles__boton">
+          <button onclick="cerrarProducto()">Cerrar</button>
+        </div>
+        <div class="c-expandido__detalles__texto">
+          <div class="detalles__texto--titulo">Zapatillas de Cuero</div>
+          <div class="detalles__texto--descripcion"> </div>
+        </div>
+        <div class="c-expandido__detalles__caracteristicas">
+          <div class="s-detalles__caracteristicas--tallas">
+            <div class="c-caracteristicas--tallas__items">
+                  <div class="o-itemTalla">26</div>
+                  <div class="o-itemTalla">28</div>
+                  <div class="o-itemTalla">30</div>
+            </div>
+          </div>
+          <div class="s-detalles__caracteristicas--colores">
+            <div class="c-caracteristicas--colores__items">
+                  <div class="u-orange"></div>
+                  <div class="u-red"></div>
+                  <div class="u-brown"></div>
+            </div>
+          </div>
+        </div>
+        <div class="c-anadir-detalles">
+          <div class="s-contenedor-anadir-detalles">
+            <button class="c-icono-anadir u-centrarhijo" onclick="expandirProducto()">
+              <p>Añadir</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/tienda.js"></script>
+  </body>
+</html>
