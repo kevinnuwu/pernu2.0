@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/app.css"/>
+    <title>Tienda</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Pernu</a></li>
+        <li><a href="registrarse.html">Registrarse</a></li>
+        <li><a href="index.html">Iniciar Sesión</a></li>
+        <li id="barraLateral" onclick="abrirBarra()">|||</li>
+      </ul>
+    </nav>
+    <div class="o-contenedor--encabezado">
+      <div class="c-contenedor--encabezado__imagen">The mitocondria is the powerhouse of the cell
+        <div class="imagen__texto-bienvenida u-centrar-hijo">
+          <p>Pernu</p>
+        </div>
+      </div>
+      <div class="c-contenedor--encabezado__texto">
+        <div class="c-descripcion-bienvenida u-centrar-hijo">
+          <p>Calzado de calidad a los mejores precios</p>
+        </div>
+      </div>
+    </div>
+    <div class="o-contenedor--paneles"> 
+      <div class="c-paneles__bloque"><a class="__-foto--panel" onclick="expandirProducto()">Dame Click
+          <button class="c-bloque__boton--anadir">
+            <div class="__-boton--anadir__texto">Añadir</div>
+          </button>
+          <div class="c-bloque__caracteristicas"></div></a></div>
+    </div>
+    <div class="o-producto-expandido">           </div>
+    <div class="o-barra-productos"></div>
+  </body>
+</html>

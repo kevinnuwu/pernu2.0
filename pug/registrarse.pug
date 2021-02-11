@@ -1,27 +1,24 @@
-extends ../../layouts/pug/_defaultTemplate
-block head
-    link(rel="stylesheet", href="../../css/registrarseMain.css")
-block contenidoNav
-    a(href="barraListaProducto.html")
-        img(src="https://www.mandysam.com/img/random.jpg", alt="alt")
+extends layout/_html-body
+block nav
+    nav
+        ul
+            li
+                a(href="barraListaProducto.html")
+                    img(src="https://www.mandysam.com/img/random.jpg", alt="alt")
     
-block contentTemplate
-    mixin mixinCasillasInput
-        .casillaTituloInput titulo
-        input.casillaRecoleccionInput
-    .contenedor
-        .bloc
-            .InputsFila1
+block bodyContent
+    mixin mixinCasillasInput(titulo)
+        .o-inputs
+            .inputs__titulo: titulo
+            input.inputs__casilla
+    .o-contenedor--registrarse
+        .c-contenedor__bloque
+            .c-bloque__titulo
                 #tituloRegistrarse Registrarse
-            form.InputsFila2
-                .fichaInputs#fichaCorreoElectronico
-                    +mixinCasillasInput
-                .fichaInputs#fichaNombre
-                    +mixinCasillasInput
-                .fichaInputs#fichaContrasena
-                    +mixinCasillasInput
-                .fichaInputs#fichaApellido
-                    +mixinCasillasInput
-        .barraBotones
-            button.boton
-            button.boton
+            form.c-bloque__inputs
+                +mixinCasillasInput("correo")
+                +mixinCasillasInput("nombre")
+                +mixinCasillasInput("contrasena")
+                +mixinCasillasInput("apellido")
+        .c-barra-botones
+            button.u-boton: a(href="404.html") Registrarse 

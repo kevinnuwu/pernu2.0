@@ -1,9 +1,3 @@
-@import "../../layouts/sass/config/paletaColores";
-@import "../../layouts/sass/config/mixins";
-@import "../../layouts/sass/modules/cuerpoIndex";
-@import "../../layouts/sass/modules/nav";
-@import "modules/contenidoRegistrarse"; 
- 
 
 nav a img {
     width: 3em;
@@ -11,6 +5,87 @@ nav a img {
 }
 
 
+:root{
+    box-sizing: border-box;
+}
+
+.o-contenedor--registrarse{
+    @include flexFlow(center, center, column);
+    @include contenedor (90%)
+}
+
+.o-contenedor__bloque{
+    @include flexItem(brown, 80%, 80% );
+    @include flexFlow(flex-start, center, column)    
+}
+
+.c-bloque__titulo{
+    @include flexItem(black, 20%, 100%);
+    padding: 2em;
+    box-sizing: border-box;
+
+        #tituloRegistrarse{
+            font-size: 2em;
+            color: white;
+        }
+}
+
+.c-bloque__inputs{
+    @include flexItem(black, 80%, 100%);
+    @include flexFlow();
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.o-inputs{
+    @include flexItem(white, 40%, 40%);
+    @include flexFlow(flex-start, flex-start, column);
+    margin: 1em 2em;
+    box-sizing: border-box;
+    &:nth-child(even){
+        background-color: crimson
+    }
+
+}
+
+.inputs__titulo{
+    @include flexItem(SaddleBrown, 40%, 50%);
+}
+
+.inputs__casilla{
+    @include flexItem (BurlyWood, 60%, 100%);
+    box-sizing: border-box;
+}
+
+.c-barra-botones{
+    @include flexItem(gold, 20%, 100%);
+    @include flexFlow(space-between, center);   
+    padding: 0.5em 0;
+}
+
+.u-boton{
+    @include button(40%, 15%);
+    margin: 0 2em;
+}
+// @mixin flexItem ($backgroundColor: white, $height: 100%, $width: 40%, $important: ""){
+    //     background: $backgroundColor;
+//     height:$height;
+//     width: $width unquote($important);
+// }
+
+// @mixin flexFlow ($justify: flex-start, $align: flex-start, $direction: row,$display: flex){
+//     justify-content: $justify;
+//     align-items: $align;
+//     flex-direction: $direction;
+//     display: $display;
+
+// }
+// @mixin backgroundImage($path: black){
+//     background: url($path);
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+// }
 // @mixin button ($height: false, $width: false){
 //     cursor: pointer;
 //     @if $height{
