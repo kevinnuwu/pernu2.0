@@ -1,0 +1,133 @@
+.o-contenedor--encabezado {
+    display: flex;
+    height: 90vh;
+}
+
+
+.c-contenedor__imagen {
+    background-color: cornflowerblue;
+    width: 45%
+}
+
+.c-contenedor__texto-bienvenida {
+    background-color: firebrick;
+    flex: 1;
+    width: 55%;
+}
+
+.c-texto-bienvenida__boton .o-contenedor--productos {
+    display: flex;
+    height: 100em;
+    flex-direction: column;
+}
+
+.o-productos__bloque {
+    background-color: darkorange;
+    flex: 1;
+    display: flex;
+
+    &:nth-child(even) {
+        background-color: darkviolet;
+    }
+}
+
+.c-bloque__imagen {
+    background-color: cadetblue;
+    width: 45%;
+}
+
+.c-bloque__texto {
+    background-color: #75c8aeff;
+    width: 45%;
+    padding: 2em;
+    box-sizing: border-box;
+    font-size: 2em;
+    font-family: 'Heebo', sans-serif;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    display: flex;
+}
+
+.c-bloque__texto__titulo {
+    height: 20%;
+    background: none;
+    height: 20%;
+    width: 40%;
+}
+
+.c-bloque__texto__descripcion {
+    height: 60%;
+    background: none;
+    height: 60%;
+    width: 40%;
+}
+
+.c-bloque__imagen {
+    background-color: #5a3d2b;
+    width: 55%;
+}
+
+#zapatilla-cuero {
+    background: url("https://i.ebayimg.com/images/g/y9oAAOSwtHZbjHD~/s-l1600.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sandalias {
+    background: url("https://st4.depositphotos.com/13194036/41698/i/600/depositphotos_416980160-stock-photo-pair-brown-suede-elegant-heeled.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sneakers {
+    background: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sneakers-1596112056.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.o-acerca {
+    background-color: indigo;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.c-acerca__titulo {
+    background-color: #5a3d2b;
+    flex: 1;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    font-size: 2em;
+    font-family: 'Heebo', sans-serif;
+}
+
+.c-acerca__descripcion {
+    background-color: #75c8aeff;
+    flex: 3;
+    display: flex;
+    font-size: 2em;
+    font-family: 'Heebo', sans-serif;
+}
+
+
+.u-acerca__descripcion__texto {
+    background-color: #75c8aeff;
+    flex: 1;
+    color: #5a3d2b;
+}
+
+.u-acerca__descripcion__imagen {
+    background-color: #5a3d2b;
+    flex: 1;
+    background: url("https://caeie.com/wp-content/uploads/2019/06/58ee597727433.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

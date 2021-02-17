@@ -1,2 +1,7 @@
 mixin navLi(href, texto)
     li: a(href= `${href}`)= texto
+//- registrarse.pug, no incluye este mixin 
+mixin mixinCasillasInput(titulo)
+        .o-inputs
+            .inputs__titulo: titulo
+            input.inputs__casilla

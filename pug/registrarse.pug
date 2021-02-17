@@ -7,14 +7,10 @@ block nav
                     img(src="https://www.mandysam.com/img/random.jpg", alt="alt")
     
 block bodyContent
-    mixin mixinCasillasInput(titulo)
-        .o-inputs
-            .inputs__titulo: titulo
-            input.inputs__casilla
-    .o-contenedor--registrarse
+    .o-contenedor--inputs
         .c-contenedor__bloque
             .c-bloque__titulo
-                #tituloRegistrarse Registrarse
+                .__-titulo-texto Registrarse
             form.c-bloque__inputs
                 +mixinCasillasInput("correo")
                 +mixinCasillasInput("nombre")

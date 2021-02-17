@@ -1,15 +1,9 @@
-
 nav a img {
     width: 3em;
     height: 3em;
 }
 
-
-:root{
-    box-sizing: border-box;
-}
-
-.o-contenedor--registrarse{
+.o-contenedor--inputs{
     @include flexFlow(center, center, column);
     @include contenedor (90%)
 }

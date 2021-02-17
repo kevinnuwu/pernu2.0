@@ -1,20 +1,19 @@
-extends ../../layouts/pug/_defaultTemplate
-block head
-    link(rel="stylesheet", href="../../css/inicioSesionMain.css")
-block contenidoNav
-    li: a(href="../../index.html") index
-block contentTemplate
+extends layout/_html-body
+block nav
+    nav
+        ul 
+            +navLi("index.html", "Pernu")
+            +navLi("registrarse.html", "Registrarse")
+block bodyContent
     mixin mixinCasillasInput(titulo)
         .casillaTituloInput= titulo
         input.casillaRecoleccionInput
-    .contenedor
-        .bloc
-            .InputsFila1
-                #tituloRegistrarse Inicio Sesión
-            form.InputsFila2
-                .fichaInputs#fichaCorreoElectronico
-                    +mixinCasillasInput("correo")
-                .fichaInputs#fichaContrasena
-                    +mixinCasillasInput("contra")
-        .barraBotones
-            button.boton Iniciar
+    .o-contenedor--inputs
+        .c-contenedor__bloque
+            .c-bloque__titulo
+                .__-titulo-texto Inicio Sesión
+            form.c-bloque__inputs
+                +mixinCasillasInput("correo")
+                +mixinCasillasInput("contra")
+        .c-barra-botones
+            button.u-boton: a(href="404.html")  Iniciar
