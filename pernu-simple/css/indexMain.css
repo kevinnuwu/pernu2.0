@@ -1,0 +1,586 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Open+Sans:ital,wght@1,800&display=swap");
+:root {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  height: 100vh; }
+
+button {
+  cursor: pointer;
+  height: 25%;
+  width: 25%;
+  border: none; }
+
+.u-centrar-hijo {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex; }
+
+.bloque {
+  display: flex;
+  background: #5a3d2b;
+  height: 30vh;
+  align-items: center;
+  justify-content: center; }
+  .bloque .titulo {
+    margin-right: auto;
+    align-self: flex-start;
+    font-family: 'volaroid_scriptregular';
+    font-size: 40px;
+    font-width: 50%; }
+  .bloque .descripcionDelTitulo {
+    font-family: 'maxwell_boldregular';
+    font-size: 23px; }
+  .bloque .bloqueInvisible {
+    margin-left: auto; }
+  .bloque .titulo, .bloque .descripcionDelTitulo {
+    color: white;
+    flex: 1; }
+
+.bloque:nth-child(even) {
+  display: flex;
+  background: #75c8aeff;
+  height: 30vh;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row-reverse; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+ul {
+  display: flex;
+  justify-content: center;
+  background: #75c8aeff;
+  margin: 0 0;
+  align-items: center;
+  height: 10vh; }
+
+li {
+  color: #5a3d2b;
+  margin: 0 25px;
+  list-style-type: none;
+  font-family: 'Open Sans'; }
+
+.o-contenedor {
+  display: flex;
+  height: 90%;
+  width: 100%;
+  background-color: white;
+  color: white; }
+
+.c-contenedor__imagen {
+  background-color: #5a3d2b;
+  height: 100%;
+  background: white;
+  height: 100%;
+  width: 50% ;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdmAnoSBsyovOya8DtKSueUgm8hbhJMhA-rA&usqp=CAU");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.c-contenedor__texto-bienvenida {
+  height: 100%;
+  background: #5a3d2b;
+  height: 100%;
+  width: 50% ;
+  flex: 1;
+  width: 55%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  display: flex;
+  padding: 2em; }
+
+.c-texto-bienvenida__titulo {
+  height: 20%;
+  background: none;
+  height: 20%;
+  width: 100% ;
+  font-size: 2em;
+  font-family: 'Heebo', sans-serif; }
+
+.c-texto-bienvenida__boton {
+  height: 80%;
+  background: #5a3d2b;
+  height: 80%;
+  width: 100% ;
+  padding: 8em;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row;
+  display: flex; }
+  .c-texto-bienvenida__boton button {
+    cursor: pointer;
+    height: 5em;
+    width: 20em;
+    background-color: #75c8aeff;
+    border: none;
+    font-family: 'Heebo', sans-serif;
+    color: white;
+    font-size: 1em;
+    box-sizing: border-box; }
+
+.o-contenedor--productos {
+  display: flex;
+  height: 100em;
+  flex-direction: column; }
+
+.o-productos__bloque {
+  background-color: darkorange;
+  flex: 1;
+  display: flex; }
+  .o-productos__bloque:nth-child(even) {
+    background-color: darkviolet; }
+
+.c-bloque__texto {
+  background-color: #75c8aeff;
+  width: 45%;
+  padding: 2em;
+  box-sizing: border-box;
+  font-size: 2em;
+  font-family: 'Heebo', sans-serif;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  display: flex; }
+
+.c-bloque__texto__titulo {
+  height: 20%;
+  background: none;
+  height: 20%;
+  width: 40% ; }
+
+.c-bloque__texto__descripcion {
+  height: 60%;
+  background: none;
+  height: 60%;
+  width: 40% ; }
+
+.c-bloque__imagen {
+  background-color: #5a3d2b;
+  width: 55%; }
+
+#zapatilla-cuero {
+  background: url("https://i.ebayimg.com/images/g/y9oAAOSwtHZbjHD~/s-l1600.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#sandalias {
+  background: url("https://st4.depositphotos.com/13194036/41698/i/600/depositphotos_416980160-stock-photo-pair-brown-suede-elegant-heeled.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#sneakers {
+  background: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sneakers-1596112056.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.o-acerca {
+  background-color: indigo;
+  height: 120vh;
+  display: flex;
+  flex-direction: column; }
+
+.c-acerca__titulo {
+  background-color: #5a3d2b;
+  flex: 1;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  font-size: 2em;
+  font-family: 'Heebo', sans-serif; }
+
+.c-acerca__descripcion {
+  background-color: #75c8aeff;
+  flex: 3;
+  display: flex;
+  font-size: 2em;
+  font-family: 'Heebo', sans-serif; }
+
+.u-acerca__descripcion__texto {
+  background-color: #75c8aeff;
+  flex: 1;
+  color: #5a3d2b; }
+
+.u-acerca__descripcion__imagen {
+  background-color: #5a3d2b;
+  flex: 1;
+  background: url("https://caeie.com/wp-content/uploads/2019/06/58ee597727433.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+  @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Open+Sans:ital,wght@1,800&display=swap");
+:root {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  height: 100vh; }
+
+button {
+  cursor: pointer;
+  height: 25%;
+  width: 25%; }
+
+.contenedor {
+  height: 80%;
+  width: 100%;
+  background-color: black;
+  color: white; }
+
+.bloque {
+  display: flex;
+  background: #18181c;
+  height: 30vh;
+  align-items: center;
+  justify-content: center; }
+  .bloque .titulo {
+    margin-right: auto;
+    align-self: flex-start;
+    font-family: 'volaroid_scriptregular';
+    font-size: 40px;
+    font-width: 50%; }
+  .bloque .descripcionDelTitulo {
+    font-family: 'maxwell_boldregular';
+    font-size: 23px; }
+  .bloque .bloqueInvisible {
+    margin-left: auto; }
+  .bloque .titulo, .bloque .descripcionDelTitulo {
+    color: white;
+    flex: 1; }
+
+.bloque:nth-child(even) {
+  display: flex;
+  background: #75c8aeff;
+  height: 30vh;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row-reverse; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  background: #ffecb4ff;
+  margin: 0 0;
+  align-items: center;
+  height: 10vh; }
+
+li {
+  color: #18181c;
+  margin: 0 25px;
+  list-style-type: none;
+  font-family: 'volaroid_scriptregular'; }
+
+.o-contenedor--encabezado {
+  display: flex;
+  height: 90vh; }
+
+.c-contenedor__imagen {
+  background-color: cornflowerblue;
+  width: 45%; }
+
+.c-contenedor__texto-bienvenida {
+  background-color: firebrick;
+  flex: 1;
+  width: 55%; }
+
+.c-texto-bienvenida__boton .o-contenedor--productos {
+  display: flex;
+  height: 100em;
+  flex-direction: column; }
+
+.o-productos__bloque {
+  background-color: darkorange;
+  flex: 1;
+  display: flex; }
+  .o-productos__bloque:nth-child(even) {
+    background-color: darkviolet; }
+
+.c-bloque__imagen {
+  background-color: cadetblue;
+  width: 45%; }
+
+.c-bloque__texto {
+  background-color: #75c8aeff;
+  width: 45%;
+  padding: 2em;
+  box-sizing: border-box;
+  font-size: 2em;
+  font-family: 'Heebo', sans-serif;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  display: flex; }
+
+.c-bloque__texto__titulo {
+  height: 20%;
+  background: none;
+  height: 20%;
+  width: 40%; }
+
+.c-bloque__texto__descripcion {
+  height: 60%;
+  background: none;
+  height: 60%;
+  width: 40%; }
+
+.c-bloque__imagen {
+  background-color: #5a3d2b;
+  width: 55%; }
+
+#zapatilla-cuero {
+  background: url("https://i.ebayimg.com/images/g/y9oAAOSwtHZbjHD~/s-l1600.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#sandalias {
+  background: url("https://st4.depositphotos.com/13194036/41698/i/600/depositphotos_416980160-stock-photo-pair-brown-suede-elegant-heeled.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#sneakers {
+  background: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sneakers-1596112056.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.o-acerca {
+  background-color: indigo;
+  height: 120vh;
+  display: flex;
+  flex-direction: column; }
+
+.c-acerca__titulo {
+  background-color: #5a3d2b;
+  flex: 1;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  font-size: 2em;
+  font-family: 'Heebo', sans-serif; }
+
+.c-acerca__descripcion {
+  background-color: #75c8aeff;
+  flex: 3;
+  display: flex;
+  font-size: 2em;
+  font-family: 'Heebo', sans-serif; }
+
+.u-acerca__descripcion__texto {
+  background-color: #75c8aeff;
+  flex: 1;
+  color: #5a3d2b; }
+
+.u-acerca__descripcion__imagen {
+  background-color: #5a3d2b;
+  flex: 1;
+  background: url("https://caeie.com/wp-content/uploads/2019/06/58ee597727433.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.o-contenedor--encabezado {
+  height: 90vh; }
+
+.c-contenedor--encabezado__imagen {
+  background: black url("https://c4.wallpaperflare.com/wallpaper/573/746/509/tf2-engineer-pyro-team-fortes2-wallpaper-preview.jpg");
+  /* The image used */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column; }
+
+.imagen__texto-bienvenida {
+  padding: 1em;
+  background-color: darkturquoise;
+  width: 30em;
+  margin-left: 3em;
+  font-size: 2em;
+  color: white; }
+
+.c-descripcion-bienvenida {
+  background-color: deeppink;
+  width: 30em;
+  margin-left: 3em;
+  margin-top: 3em;
+  font-size: 2em;
+  color: white; }
+
+.o-contenedor--paneles {
+  background-color: indigo;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: auto; }
+  .o-contenedor--paneles::-webkit-scrollbar {
+    display: none; }
+
+.c-paneles__bloque {
+  background-color: lightgreen;
+  height: 40%;
+  width: 20%;
+  margin: 2em 0.5em; }
+
+.__-foto--panel {
+  background-color: burlywood;
+  height: 70%;
+  display: flex;
+  justify-content: flex-end; }
+  .__-foto--panel .c-bloque__boton--anadir {
+    background-color: black;
+    height: 30%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .__-foto--panel .c-bloque__boton--anadir .__-boton--anadir__texto {
+      color: white; }
+
+.c-bloque__caracteristicas {
+  background-color: cadetblue;
+  height: 31%;
+  display: flex; }
+  .c-bloque__caracteristicas .tallasPanel {
+    width: 36%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    word-wrap: break-word;
+    color: white; }
+  .c-bloque__caracteristicas .coloresPanel {
+    background-color: black;
+    display: flex;
+    width: 65%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .c-bloque__caracteristicas .coloresPanel .circulosColoresPanel {
+      border-radius: 24px;
+      height: 1em;
+      width: 1em;
+      margin-left: 1em; }
+
+nav a img {
+  width: 3em;
+  height: 3em; }
+
+.o-contenedor--inputs {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  height: 90%;
+  width: 100%;
+  background-color: black;
+  color: white; }
+
+.o-contenedor__bloque {
+  height: 80%;
+  background: brown;
+  height: 80%;
+  width: 80% ;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  display: flex; }
+
+.c-bloque__titulo {
+  height: 20%;
+  background: black;
+  height: 20%;
+  width: 100% ;
+  padding: 2em;
+  box-sizing: border-box; }
+  .c-bloque__titulo #tituloRegistrarse {
+    font-size: 2em;
+    color: white; }
+
+.c-bloque__inputs {
+  height: 80%;
+  background: black;
+  height: 80%;
+  width: 100% ;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap; }
+
+.o-inputs {
+  height: 40%;
+  background: white;
+  height: 40%;
+  width: 40% ;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  display: flex;
+  margin: 1em 2em;
+  box-sizing: border-box; }
+  .o-inputs:nth-child(even) {
+    background-color: crimson; }
+
+.inputs__titulo {
+  height: 40%;
+  background: SaddleBrown;
+  height: 40%;
+  width: 50% ; }
+
+.inputs__casilla {
+  height: 60%;
+  background: BurlyWood;
+  height: 60%;
+  width: 100% ;
+  box-sizing: border-box; }
+
+.c-barra-botones {
+  height: 20%;
+  background: gold;
+  height: 20%;
+  width: 100% ;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  padding: 0.5em 0; }
+
+.u-boton {
+  cursor: pointer;
+  height: 40%;
+  width: 15%;
+  margin: 0 2em; }
