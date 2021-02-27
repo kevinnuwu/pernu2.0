@@ -3,38 +3,25 @@ block head
     link(rel="stylesheet", href="css/app.css")
     title Tienda
 block nav
-    nav
-        ul
-            +navLi("index.html", "Pernu").u-centrar
-            +navLi("registrarse.html", "Registrarse").u-centrar
-            +navLi("index.html", "Iniciar Sesión").u-centrar
-            li#barraLateral(onclick="abrirBarra()") |||
-
-
+    //- nav
+    //-     ul
+    //-         li.u-centrar Pernu
+    //-         +navLi("registrarse.html", "Registrarse").u-centrar
+    //-         +navLi("index.html", "Iniciar Sesión").u-centrar
+    //-         li#barra-lateral(onclick="abrirBarra()") |||
 block bodyContent
-    .o-contenedor--encabezado
-        .c-contenedor--encabezado__imagen The mitocondria is the powerhouse of the cell
-            .imagen__texto-bienvenida.u-centrar-hijo: p Pernu
-        .c-contenedor--encabezado__texto
-            .c-descripcion-bienvenida.u-centrar-hijo: p Calzado de calidad a los mejores precios
-    .o-contenedor--paneles 
-        .c-paneles__bloque: a(class="__-foto--panel" onclick="expandirProducto()") Dame Click
-            button.c-bloque__boton--anadir
-                .__-boton--anadir__texto Añadir
-            .c-bloque__caracteristicas
-    .o-producto-expandido            
-    .o-barra-productos
+    .o-contenedor
+    //- .o-contenedor--grande
+    //-     .c-grande__zapato 
+    //-         .c-zapato__img
+    //-         .c-zapato__barra 
+    //-             .u-info-zapato 40$
+    //-             .__-nada
+    //-             .u-info-zapato Ver
+    //-     .c-grande__fondo 
+            
 
-//- mixin idCirculoColores(id)
-//-     .circulosColoresPanel(id= `circuloColores${id}`)
 
-//- mixin panelProducto (numeroTallaPanel, ...ids)
-//-     .bloquePanel
-//-         a.fotoPanel(href="../../producto-expandido/pug/productoExpandido.html")
-//-             button.botonAnadirPanel
-//-                 .textoBotonAnadirPanel Añadir
-//-         .caracteristicasPanel
-//-             .coloresPanel
-//-                 each id in ids
-//-                     .circulosColoresPanel(id= `circuloColores${id}`)
-//-             .tallasPanel=numeroTallaPanel
+    script(src="js/tienda.js") 
+
+    

@@ -1,8 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Open+Sans:ital,wght@1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 :root {
   box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+ul {
+  display: flex;
+  justify-content: center;
+  background: #ffecb4ff;
+  margin: 0 0;
+  align-items: center;
+  height: 10vh;
+  font-family: 'Open Sans'; }
+
+li {
+  color: #18181c;
+  margin: 0 25px;
+  list-style-type: none; }
 
 body {
   margin: 0;
@@ -47,227 +65,6 @@ button {
   align-items: center;
   justify-content: center;
   flex-flow: row-reverse; }
-
-a {
-  text-decoration: none;
-  color: inherit; }
-
-ul {
-  display: flex;
-  justify-content: flex-end;
-  background: #ffecb4ff;
-  margin: 0 0;
-  align-items: center;
-  height: 10vh; }
-
-li {
-  color: #18181c;
-  margin: 0 25px;
-  list-style-type: none;
-  font-family: 'volaroid_scriptregular'; }
-
-.o-contenedor--encabezado {
-  display: flex;
-  height: 90vh; }
-
-.c-contenedor__imagen {
-  background-color: cornflowerblue;
-  width: 45%; }
-
-.c-contenedor__texto-bienvenida {
-  background-color: firebrick;
-  flex: 1;
-  width: 55%; }
-
-.c-texto-bienvenida__boton .o-contenedor--productos {
-  display: flex;
-  height: 100em;
-  flex-direction: column; }
-
-.o-productos__bloque {
-  background-color: darkorange;
-  flex: 1;
-  display: flex; }
-  .o-productos__bloque:nth-child(even) {
-    background-color: darkviolet; }
-
-.c-bloque__imagen {
-  background-color: cadetblue;
-  width: 45%; }
-
-.c-bloque__texto {
-  background-color: #75c8aeff;
-  width: 45%;
-  padding: 2em;
-  box-sizing: border-box;
-  font-size: 2em;
-  font-family: 'Heebo', sans-serif;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  display: flex; }
-
-.c-bloque__texto__titulo {
-  height: 20%;
-  background: none;
-  height: 20%;
-  width: 40%; }
-
-.c-bloque__texto__descripcion {
-  height: 60%;
-  background: none;
-  height: 60%;
-  width: 40%; }
-
-.c-bloque__imagen {
-  background-color: #5a3d2b;
-  width: 55%; }
-
-#zapatilla-cuero {
-  background: url("https://i.ebayimg.com/images/g/y9oAAOSwtHZbjHD~/s-l1600.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-#sandalias {
-  background: url("https://st4.depositphotos.com/13194036/41698/i/600/depositphotos_416980160-stock-photo-pair-brown-suede-elegant-heeled.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-#sneakers {
-  background: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sneakers-1596112056.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.o-acerca {
-  background-color: indigo;
-  height: 120vh;
-  display: flex;
-  flex-direction: column; }
-
-.c-acerca__titulo {
-  background-color: #5a3d2b;
-  flex: 1;
-  color: white;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  display: flex;
-  font-size: 2em;
-  font-family: 'Heebo', sans-serif; }
-
-.c-acerca__descripcion {
-  background-color: #75c8aeff;
-  flex: 3;
-  display: flex;
-  font-size: 2em;
-  font-family: 'Heebo', sans-serif; }
-
-.u-acerca__descripcion__texto {
-  background-color: #75c8aeff;
-  flex: 1;
-  color: #5a3d2b; }
-
-.u-acerca__descripcion__imagen {
-  background-color: #5a3d2b;
-  flex: 1;
-  background: url("https://caeie.com/wp-content/uploads/2019/06/58ee597727433.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.o-contenedor--encabezado {
-  height: 90vh; }
-
-.c-contenedor--encabezado__imagen {
-  background: black url("https://c4.wallpaperflare.com/wallpaper/573/746/509/tf2-engineer-pyro-team-fortes2-wallpaper-preview.jpg");
-  /* The image used */
-  height: 100%;
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column; }
-
-.imagen__texto-bienvenida {
-  padding: 1em;
-  background-color: darkturquoise;
-  width: 30em;
-  margin-left: 3em;
-  font-size: 2em;
-  color: white; }
-
-.c-descripcion-bienvenida {
-  background-color: deeppink;
-  width: 30em;
-  margin-left: 3em;
-  margin-top: 3em;
-  font-size: 2em;
-  color: white; }
-
-.o-contenedor--paneles {
-  background-color: indigo;
-  height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  overflow: auto; }
-  .o-contenedor--paneles::-webkit-scrollbar {
-    display: none; }
-
-.c-paneles__bloque {
-  background-color: lightgreen;
-  height: 40%;
-  width: 20%;
-  margin: 2em 0.5em; }
-
-.__-foto--panel {
-  background-color: burlywood;
-  height: 70%;
-  display: flex;
-  justify-content: flex-end; }
-  .__-foto--panel .c-bloque__boton--anadir {
-    background-color: black;
-    height: 30%;
-    width: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    .__-foto--panel .c-bloque__boton--anadir .__-boton--anadir__texto {
-      color: white; }
-
-.c-bloque__caracteristicas {
-  background-color: cadetblue;
-  height: 31%;
-  display: flex; }
-  .c-bloque__caracteristicas .tallasPanel {
-    width: 36%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
-    word-wrap: break-word;
-    color: white; }
-  .c-bloque__caracteristicas .coloresPanel {
-    background-color: black;
-    display: flex;
-    width: 65%;
-    height: 100%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
-    .c-bloque__caracteristicas .coloresPanel .circulosColoresPanel {
-      border-radius: 24px;
-      height: 1em;
-      width: 1em;
-      margin-left: 1em; }
 
 nav a img {
   width: 3em;
@@ -359,3 +156,39 @@ nav a img {
   height: 40%;
   width: 15%;
   margin: 0 2em; }
+
+.o-contenedor--grande {
+  width: 100%;
+  height: 90vh;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 9fr 1fr; }
+
+.c-grande__fondo {
+  background-color: black; }
+
+.c-grande__zapato {
+  background-color: black;
+  padding-left: 6em;
+  display: grid;
+  grid-template-rows: 5fr 1fr; }
+
+.c-zapato__img {
+  background: url("../zapatosVerdes.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.c-zapato__barra {
+  padding: 1.8em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+
+.u-info-zapato {
+  font-family: 'Pacifico', 'Comic Sans';
+  color: white;
+  cursor: pointer;
+  font-size: 2em; }
+  .u-info-zapato:hover {
+    background-color: white;
+    color: black; }

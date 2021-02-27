@@ -1,0 +1,16 @@
+.o-contenedor--grande {
+  width: 100%;
+  height: 80vh;
+  background-color: black; }
+
+.c-grande__zapato {
+  position: relative;
+  background-color: blue;
+  height: 100%;
+  width: 65%; }
+
+.c-zapato__img .c-zapato__barra {
+  position: relative;
+  background-color: brown;
+  height: 100%;
+  width: 35%; }

@@ -19,12 +19,12 @@
     display: $display;
 
 }
-
-@mixin backgroundImage($path: black){
+//-Lo modifiqué para el nuevo diseño de la tienda
+@mixin backgroundImage($path: black, $size:cover){
     background: url($path);
-    background-position: center;
+    background-position:left;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: $size;
 }
 
 @mixin button ($height: false, $width: false){

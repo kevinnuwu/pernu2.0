@@ -2,6 +2,26 @@
 :root{
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+    color: inherit
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    background: $banana ;
+    margin: 0 0;
+    align-items: center;
+    height: 10vh;
+    font-family: 'Open Sans';
+}
+
+li{
+    color: $brown;
+    margin: 0 25px;
+    list-style-type: none;
+}
 body{
     margin: 0;
     height: 100vh;

@@ -1,8 +1,6 @@
 @import "abstracts/paletaColores";
 @import "abstracts/mixins";
 @import "core/tipografia.scss";
-@import "layout/cuerpoIndex";
-@import "layout/nav";
-@import "pages/index";
-@import "pages/tiendaMain.scss";
+@import "layout/general";
 @import "pages/inicio-registrarse.scss";
+@import "pages/tienda.scss";

@@ -1,0 +1,93 @@
+#barra-lateral {
+  margin-left: auto; }
+
+.o-contenedor--encabezado {
+  height: 90vh; }
+
+.c-contenedor--encabezado__imagen {
+  background: black url("https://c4.wallpaperflare.com/wallpaper/573/746/509/tf2-engineer-pyro-team-fortes2-wallpaper-preview.jpg");
+  /* The image used */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column; }
+
+.imagen__texto-bienvenida {
+  padding: 1em;
+  background-color: darkturquoise;
+  width: 30em;
+  margin-left: 3em;
+  font-size: 2em;
+  color: white; }
+
+.c-descripcion-bienvenida {
+  background-color: deeppink;
+  width: 30em;
+  margin-left: 3em;
+  margin-top: 3em;
+  font-size: 2em;
+  color: white; }
+
+.o-contenedor--paneles {
+  background-color: indigo;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: auto; }
+  .o-contenedor--paneles::-webkit-scrollbar {
+    display: none; }
+
+.c-paneles__bloque {
+  background-color: lightgreen;
+  height: 40%;
+  width: 20%;
+  margin: 2em 0.5em; }
+
+.__-foto--panel {
+  background-color: burlywood;
+  height: 70%;
+  display: flex;
+  justify-content: flex-end; }
+  .__-foto--panel .c-bloque__boton--anadir {
+    background-color: black;
+    height: 30%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .__-foto--panel .c-bloque__boton--anadir .__-boton--anadir__texto {
+      color: white; }
+
+.c-bloque__caracteristicas {
+  background-color: cadetblue;
+  height: 31%;
+  display: flex; }
+  .c-bloque__caracteristicas .tallasPanel {
+    width: 36%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    word-wrap: break-word;
+    color: white; }
+  .c-bloque__caracteristicas .coloresPanel {
+    background-color: black;
+    display: flex;
+    width: 65%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .c-bloque__caracteristicas .coloresPanel .circulosColoresPanel {
+      border-radius: 24px;
+      height: 1em;
+      width: 1em;
+      margin-left: 1em; }

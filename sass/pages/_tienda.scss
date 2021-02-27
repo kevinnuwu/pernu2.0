@@ -1,0 +1,44 @@
+.o-contenedor--grande {
+    width: 100%;
+    height: 90vh;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+}
+
+
+
+.c-grande__fondo {
+    background-color: black;
+
+}
+
+.c-grande__zapato {
+    background-color: black;
+    padding-left: 6em;
+    display: grid;
+    grid-template-rows: 5fr 1fr
+}
+
+.c-zapato__img {
+
+    @include backgroundImage("../zapatosVerdes.jpg", contain);
+
+}
+
+.c-zapato__barra {
+    padding: 1.8em;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.u-info-zapato {
+    font-family: 'Pacifico', 'Comic Sans';
+    color: white;
+    cursor: pointer;
+    font-size: 2em;
+    &:hover{
+        background-color: white;
+        color: black;
+    }
+}
